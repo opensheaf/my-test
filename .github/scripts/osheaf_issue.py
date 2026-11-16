@@ -84,7 +84,7 @@ def sections(body):
 
 
 def field(form, label, required=False):
-    value = form.get(label, "").strip()
+    value = str(form.get(label, "") or "").strip()
     if required and not value:
         raise Problem(f"The field **{label}** is empty, and it is needed.")
     return value
@@ -315,7 +315,17 @@ def safe_name(text):
 
 
 def download(form, label, folder):
+    """The files attached to a field: links in an issue, or files of the
+    request's folder (a page's request, see main), copied into folder."""
     files = []
+    for name in form.get("__files__", {}).get(label, []):
+        source = (form["__dir__"] / name).resolve()
+        if form["__dir__"].resolve() not in source.parents or not source.is_file():
+            raise Problem(f"The file `{name}` of **{label}** is not in the request.")
+        folder.mkdir(parents=True, exist_ok=True)
+        path = folder / safe_name(Path(name).name)
+        path.write_bytes(source.read_bytes())
+        files.append(path)
     for text, url in LINK.findall(form.get(label, "")):
         folder.mkdir(parents=True, exist_ok=True)
         path = folder / safe_name(text or url.rsplit("/", 1)[-1])
@@ -404,7 +414,7 @@ def current_description(ident):
 # --- the operations ------------------------------------------------------------
 # Each returns (collection changed or '', commit message, issue title, what was done).
 
-def deposit(form, number):
+def deposit(form, origin):
     ident = identifier(form, "Identifier")
     cid = collection(form, required=False)
     if list_path(ident).exists():
@@ -459,7 +469,7 @@ def deposit(form, number):
             args += ["--available", available]
         if issued := date(form, "Date the paper first appeared"):
             args += ["--issued", issued]
-        args += ["--message", f"Deposit from issue #{number}"]
+        args += ["--message", f"Deposit from {origin}"]
         osheaf(*args)
     where = ""
     if cid:
@@ -476,11 +486,11 @@ def deposit(form, number):
                                              + [dv]))
         save(cid, data)
         where = f" in the collection `{cid}`"
-    return (cid, f"Deposit {ident}{where} (issue #{number})", f"Deposit: {ident}",
+    return (cid, f"Deposit {ident}{where} ({origin})", f"Deposit: {ident}",
             f"`{ident}` was deposited{where}")
 
 
-def notice(form, number):
+def notice(form, origin):
     ident = identifier(form, "Identifier", limit=64)
     about = field(form, "Document version it is about", required=True)
     if not about.isdigit():
@@ -491,34 +501,34 @@ def notice(form, number):
         files = download(form, "Full statement (optional)", Path(tmp))
         if files:
             args += ["--file", files[0]]
-        args += ["--message", f"Notice from issue #{number}"]
+        args += ["--message", f"Notice from {origin}"]
         osheaf(*args)
-    return ("", f"Notice about {ident}, version {about} (issue #{number})",
+    return ("", f"Notice about {ident}, version {about} ({origin})",
             f"Notice: {ident}, version {about}", f"`{ident}` was given a notice")
 
 
-def withdraw(form, number):
+def withdraw(form, origin):
     ident = identifier(form, "Identifier", limit=64)
     osheaf("withdraw", ident, "--reason", field(form, "Reason for the withdrawal", True),
-           "--message", f"Withdrawal from issue #{number}")
-    return ("", f"Withdraw {ident} (issue #{number})", f"Withdrawal: {ident}",
+           "--message", f"Withdrawal from {origin}")
+    return ("", f"Withdraw {ident} ({origin})", f"Withdrawal: {ident}",
             f"`{ident}` was withdrawn (its files stay in the archive)")
 
 
-def relicense(form, number):
+def relicense(form, origin):
     ident = identifier(form, "Identifier", limit=64)
     rights = licence(form, "New licence")
     if rights not in LICENCES:
         raise Problem("Choose the new licence in the field **New licence**.")
     args = ["relicense", ident, "--rights", rights, "--method",
             field(form, "How the authors agreed", required=True)]
-    args += ["--message", f"New licence from issue #{number}"]
+    args += ["--message", f"New licence from {origin}"]
     osheaf(*args)
-    return ("", f"Relicense {ident} as {rights} (issue #{number})", f"Licence: {ident}, {rights}",
+    return ("", f"Relicense {ident} as {rights} ({origin})", f"Licence: {ident}, {rights}",
             f"`{ident}` was relicensed as {rights}")
 
 
-def new_collection(form, number):
+def new_collection(form, origin):
     ident = identifier(form, "Identifier of the new collection")
     if list_path(ident).exists() or (Path("ocfl") / ident).exists() or \
             ident == settings().get("mainCollection"):
@@ -531,7 +541,7 @@ def new_collection(form, number):
         data["description"] = description
     data.update({"type": kind, "order": "manual", "members": []})
     save(ident, data)
-    sync(ident, f"New collection {ident} (issue #{number})")
+    sync(ident, f"New collection {ident} ({origin})")
     if field(form, "Feature it on the home page").lower().startswith("yes"):
         s = settings()
         s.setdefault("index", {}).setdefault("html", {"templates": "templates"})["featured"] = ident
@@ -544,11 +554,11 @@ def new_collection(form, number):
         where = f" in the collection `{parent}`"
     else:
         where = ""
-    return (parent, f"New collection {ident}{where} (issue #{number})", f"Collection: {ident}",
+    return (parent, f"New collection {ident}{where} ({origin})", f"Collection: {ident}",
             f"the collection `{ident}` was created{where}")
 
 
-def add(form, number):
+def add(form, origin):
     cid = collection(form, required=True)
     data = load(cid)
     archive = archive_url(form, "Archive of the new member")
@@ -569,11 +579,11 @@ def add(form, number):
         member["revisions"] = revisions
     insert(data, member, position(form))
     save(cid, data)
-    return (cid, f"Add {ident} from {archive} to {cid} (issue #{number})",
+    return (cid, f"Add {ident} from {archive} to {cid} ({origin})",
             f"Member added: {ident} (in {cid})", f"`{ident}` was added to `{cid}`")
 
 
-def vet(form, number):
+def vet(form, origin):
     cid = collection(form, required=True)
     data = load(cid)
     if data.get("type") != "selection":
@@ -590,22 +600,61 @@ def vet(form, number):
     member["revisions"] = sorted(old + added)
     save(cid, data)
     vs = ", ".join(map(str, added))
-    return (cid, f"Vet version {vs} of {ident} in {cid} (issue #{number})",
+    return (cid, f"Vet version {vs} of {ident} in {cid} ({origin})",
             f"Vetted: {ident}, version {vs} (in {cid})", f"version {vs} of `{ident}` was vetted")
 
 
-def remove(form, number):
+def remove(form, origin):
     cid = collection(form, required=True)
     data = load(cid)
     ident = identifier(form, "Member to remove", limit=64)
     member = find(data, ident, archive_url(form, "Archive of the member", required=False))
     data["members"].remove(member)
     save(cid, data)
-    return (cid, f"Remove {ident} from {cid} (issue #{number})",
+    return (cid, f"Remove {ident} from {cid} ({origin})",
             f"Member removed: {ident} (from {cid})", f"`{ident}` was removed from `{cid}`")
 
 
-OPERATIONS = {"deposit": deposit, "notice": notice, "withdraw": withdraw, "relicense": relicense,
+def setup(form, origin):
+    """Set the archive up (osheaf init), as the workflow "Set up the archive"
+    does: for a page, which cannot start workflows."""
+    if Path("osheaf.json").exists():
+        raise Problem("The archive is already set up.")
+    repo = os.environ.get("GITHUB_REPOSITORY", "owner/archive")
+    owner, name_ = repo.split("/", 1)[0].lower(), repo.split("/", 1)[1]
+    base = field(form, "Base URL") or (f"https://{owner}.github.io/" if name_.lower() == f"{owner}.github.io"
+                                       else f"https://{owner}.github.io/{name_}/")
+    base = base if base.endswith("/") else base + "/"
+    import datetime
+    archive_id = field(form, "Archive identifier") or \
+        f"tag:{owner}.github.io,{datetime.date.today().year}:{name_.lower()}"
+    title = field(form, "Name", required=True)
+    args = ["init", ".", "--archive-id", archive_id, "--name", title, "--base-url", base,
+            "--curator", field(form, "Curator", required=True)]
+    for label, option in (("Affiliation", "--affiliation"), ("Contact", "--contact")):
+        if value := field(form, label):
+            args += [option, value]
+    osheaf(*args)
+    purpose = field(form, "Purpose").lower() or "papers"
+    if purpose in ("selection", "catalogue"):
+        ident = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")[:32].strip("-") or "collection"
+        data = {"title": title}
+        if description := field(form, "Description"):
+            data["description"] = description
+        data.update({"type": purpose, "order": "manual", "members": []})
+        save(ident, data)
+        sync(ident, f"The collection is set up ({origin})")
+        s = settings()
+        s.setdefault("index", {}).setdefault("html", {"templates": "templates"})["featured"] = ident
+        Path("osheaf.json").write_text(json.dumps(s, indent=2, ensure_ascii=False) + "\n",
+                                       encoding="utf-8")
+        done = f"the archive was set up, with the collection `{ident}` featured on its home page"
+    else:
+        done = "the archive was set up"
+    return ("", f"Set up the archive: {title} ({origin})", f"Setup: {title}", done)
+
+
+OPERATIONS = {"setup": setup, "deposit": deposit, "notice": notice, "withdraw": withdraw, "relicense": relicense,
               "new_collection": new_collection, "add": add, "vet": vet, "remove": remove}
 
 
@@ -622,21 +671,41 @@ def restore(saved):
         p.write_text(text, encoding="utf-8")
 
 
+def read_request(path):
+    """A page's request: requests/ID/request.json, with the operation, the
+    fields of the corresponding form (by their labels), and the files
+    attached to fields, in the request's folder."""
+    path = Path(path)
+    data = json.loads(path.read_text(encoding="utf-8"))
+    form = {k: str(v) for k, v in (data.get("fields") or {}).items()}
+    form["__files__"] = {k: list(v) for k, v in (data.get("files") or {}).items()}
+    form["__dir__"] = path.parent
+    return data.get("operation"), form, f"request {path.parent.name}"
+
+
 def main():
-    event = json.loads(Path(os.environ["GITHUB_EVENT_PATH"]).read_text(encoding="utf-8"))
-    issue = event["issue"]
-    form = sections(issue.get("body"))
-    kind = next((FORMS[h] for h in FORMS if h in form), None)
     result_file = Path(os.environ.get("RESULT_FILE", "result.md"))
-    if kind is None:
-        result_file.write_text("This issue is not one of the archive's forms.\n", encoding="utf-8")
-        return 2
+    if len(sys.argv) == 3 and sys.argv[1] == "--request":
+        kind, form, origin = read_request(sys.argv[2])
+        if kind not in OPERATIONS:
+            result_file.write_text(f"Unknown operation `{kind}`.\n", encoding="utf-8")
+            return 1
+    else:
+        event = json.loads(Path(os.environ["GITHUB_EVENT_PATH"]).read_text(encoding="utf-8"))
+        issue = event["issue"]
+        form = sections(issue.get("body"))
+        kind = next((FORMS[h] for h in FORMS if h in form), None)
+        origin = f"issue #{issue['number']}"
+        if kind is None:
+            result_file.write_text("This issue is not one of the archive's forms.\n",
+                                   encoding="utf-8")
+            return 2
     saved = snapshot() if Path("osheaf.json").exists() else {}
     try:
-        if not Path("osheaf.json").exists():
-            raise Problem("The archive is not set up yet: run the workflow **Set up the archive** "
-                          "first (Actions tab), then open the issue again.")
-        cid, message, title, done = OPERATIONS[kind](form, issue["number"])
+        if kind != "setup" and not Path("osheaf.json").exists():
+            raise Problem("The archive is not set up yet: set it up first (the workflow **Set up "
+                          "the archive** in the Actions tab, or the manager's setup).")
+        cid, message, title, done = OPERATIONS[kind](form, origin)
         if why := field(form, "Why (optional)"):
             message += f": {why}"
         osheaf("collect")
@@ -649,7 +718,8 @@ def main():
         restore(saved)
         result_file.write_text(
             f"Nothing was changed in the archive.\n\n{p}\n\n"
-            "Edit this issue to correct it, then close and reopen it to try again.\n",
+            + ("Edit this issue to correct it, then close and reopen it to try again.\n"
+               if origin.startswith("issue") else "Correct it and send the request again.\n"),
             encoding="utf-8")
         return 1
     result_file.write_text(
