@@ -1,0 +1,13 @@
+{
+  "operation": "notice",
+  "fields": {
+    "Identifier": "random-walks",
+    "Document version it is about": "1",
+    "Text of the notice": "Lemma 2 of version 1 is wrong as stated: the constant depends on the dimension. Corrected in version 2."
+  },
+  "files": {
+    "Full statement (optional)": [
+      "random-walks-erratum.md"
+    ]
+  }
+}
