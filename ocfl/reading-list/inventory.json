@@ -2,7 +2,7 @@
   "id": "reading-list",
   "type": "https://ocfl.io/1.1/spec/#inventory",
   "digestAlgorithm": "sha512",
-  "head": "v5",
+  "head": "v6",
   "contentDirectory": "content",
   "manifest": {
     "639e79284445caedfa3435d9106aaa7d53130ad020dda8b0646e6c0a518320dc6b505ceaa8286d3e79d73945c0e13a5445293e07b6268ea6c27d426ae5ff5332": [
@@ -49,6 +49,15 @@
     ],
     "1f11a512c99a16352342b6c9ce1f140a8bebfc562960c37a579210f6cc3067af99415fcf1d56544b6a08947f9e70b01c390973022d99df0ec2b6dc52a8821c2b": [
       "v5/content/object.json"
+    ],
+    "61520527eeb2fd89177cd00a3d64d8f6b766aa85b806c3ca63c3f7e5d7bb57d25b9b4cf09d82558d96282694122d261365880b4f004ab481e759fe7fd41da3a7": [
+      "v6/content/datacite.json"
+    ],
+    "9e3a97ccde3e0cb64237de7f8e7940d216f524a4975ce023b882e30bd284363d7fa4e16bd5cf3cb208484f32eb68e9a998ed4a776983cbe3d7061f0a8db1e3c0": [
+      "v6/content/members.json"
+    ],
+    "25ff52089ae1822371be011118279d284c2c0e588d84405be930437bd238e48f55eab6ba1e4f5b66deea04c76856463e0e6f52dce44a15c2a8d39b2332d6ff69": [
+      "v6/content/object.json"
     ]
   },
   "versions": {
@@ -146,6 +155,25 @@
           "object.json"
         ]
       }
+    },
+    "v6": {
+      "created": "2026-11-16T00:14:01Z",
+      "message": "New collection seminar-autumn-2026 in the collection `reading-list` (request 20261116-001338-snyp)",
+      "user": {
+        "name": "Massimiliano Gubinelli",
+        "address": "https://opensheaf.github.io/my-test/"
+      },
+      "state": {
+        "61520527eeb2fd89177cd00a3d64d8f6b766aa85b806c3ca63c3f7e5d7bb57d25b9b4cf09d82558d96282694122d261365880b4f004ab481e759fe7fd41da3a7": [
+          "datacite.json"
+        ],
+        "9e3a97ccde3e0cb64237de7f8e7940d216f524a4975ce023b882e30bd284363d7fa4e16bd5cf3cb208484f32eb68e9a998ed4a776983cbe3d7061f0a8db1e3c0": [
+          "members.json"
+        ],
+        "25ff52089ae1822371be011118279d284c2c0e588d84405be930437bd238e48f55eab6ba1e4f5b66deea04c76856463e0e6f52dce44a15c2a8d39b2332d6ff69": [
+          "object.json"
+        ]
+      }
     }
   },
   "fixity": {
@@ -194,6 +222,15 @@
       ],
       "4335fd2a43dd14a07e6944e298e5ba15": [
         "v5/content/object.json"
+      ],
+      "ed1fab0571419d8cc619fbf4d288d7b6": [
+        "v6/content/datacite.json"
+      ],
+      "b8a8c410dd12836e5b4a2a8652ef56c1": [
+        "v6/content/members.json"
+      ],
+      "362c2eb999a8de3d33ab42346fef8fbd": [
+        "v6/content/object.json"
       ]
     },
     "sha256": {
@@ -241,6 +278,15 @@
       ],
       "ea1d36ccbcd3d7b042353c279e01364536c6e80a67c09f27dc4cfa5dd30b811d": [
         "v5/content/object.json"
+      ],
+      "49d1fb981dd0044a4aae45549e297171f31969ca112a6ab1ce32a04dabb6fa7c": [
+        "v6/content/datacite.json"
+      ],
+      "58550c31032feb617e2fff82ff2a683eecf74c85a99c741e86c9f7a09ad4c8d2": [
+        "v6/content/members.json"
+      ],
+      "92fdf8718392494c94c912ff6af5f6d22f106f41078c723485e1dd96c6d6a4f2": [
+        "v6/content/object.json"
       ]
     }
   }

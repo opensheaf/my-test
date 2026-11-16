@@ -1,0 +1,11 @@
+# The members of a collection of this archive, in order, for
+# `osheaf collection sync ID --from collections/ID.yaml`: kept by the issue
+# forms of this repository (Issues, New issue) or by hand (see the README).
+# Each member is an object of an OpenSheaf archive: the archive's address and
+# the object's identifier; in a selection, `revisions` lists the document
+# versions vetted (1, 2, ...).
+title: Seminar, autumn 2026
+description: The papers discussed in the seminar.
+type: catalogue
+order: manual
+members: []

@@ -1,0 +1,63 @@
+{
+  "id": "seminar-autumn-2026",
+  "type": "https://ocfl.io/1.1/spec/#inventory",
+  "digestAlgorithm": "sha512",
+  "head": "v1",
+  "contentDirectory": "content",
+  "manifest": {
+    "f6c060dad41c6c3744c1282fe5a642fb72fe6f076f4a0ab6269902dfe1327f9816cd8c6db2cd2acade33de39e1e3e95b0dcdd758061ef3b7e0fb80ab33b6e42a": [
+      "v1/content/datacite.json"
+    ],
+    "b937b8c8f74a4b7a0aabe66f310c6ccb8af392d4b76347b73a8e4b0fe7c19962e3f222cb2eb48b04660fd229fbed5709c30608f94317f4b54532a3c53e629d48": [
+      "v1/content/members.json"
+    ],
+    "53512d963084b2c70081ddcacbe05ac02dd7548cf4c9f1782ab401605c78cc13dad7f51d0b4fcdc51b971569f032f7fe7bc6511546a4bb53ea1af1076cdee1d2": [
+      "v1/content/object.json"
+    ]
+  },
+  "versions": {
+    "v1": {
+      "created": "2026-11-16T00:13:59Z",
+      "message": "New collection seminar-autumn-2026 (request 20261116-001338-snyp)",
+      "user": {
+        "name": "Massimiliano Gubinelli",
+        "address": "https://opensheaf.github.io/my-test/"
+      },
+      "state": {
+        "f6c060dad41c6c3744c1282fe5a642fb72fe6f076f4a0ab6269902dfe1327f9816cd8c6db2cd2acade33de39e1e3e95b0dcdd758061ef3b7e0fb80ab33b6e42a": [
+          "datacite.json"
+        ],
+        "b937b8c8f74a4b7a0aabe66f310c6ccb8af392d4b76347b73a8e4b0fe7c19962e3f222cb2eb48b04660fd229fbed5709c30608f94317f4b54532a3c53e629d48": [
+          "members.json"
+        ],
+        "53512d963084b2c70081ddcacbe05ac02dd7548cf4c9f1782ab401605c78cc13dad7f51d0b4fcdc51b971569f032f7fe7bc6511546a4bb53ea1af1076cdee1d2": [
+          "object.json"
+        ]
+      }
+    }
+  },
+  "fixity": {
+    "md5": {
+      "4b29016f6bc552c4a2189615d74913d0": [
+        "v1/content/datacite.json"
+      ],
+      "cada516acdecf3fd888b3b9217b135e8": [
+        "v1/content/members.json"
+      ],
+      "6f2846c5c085dce63d8c9355bc1b1767": [
+        "v1/content/object.json"
+      ]
+    },
+    "sha256": {
+      "de50dbe10f909a8a37c6cd5507a64f8362e2dafe26f589e17f4c70f84fb0bedd": [
+        "v1/content/datacite.json"
+      ],
+      "6eb25de99ed98052b29d2a2e45c40a5c1f03028b0e50064a4279d28ac92c4244": [
+        "v1/content/members.json"
+      ],
+      "ac4ef3f158add3f228d07ea66f9c650c8ac0b048f7505644180844da41b5c4fa": [
+        "v1/content/object.json"
+      ]
+    }
+  }
+}

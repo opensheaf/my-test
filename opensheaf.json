@@ -42,8 +42,15 @@
     {
       "id": "reading-list",
       "kind": "collection",
-      "head": "v5",
-      "inventorySha512": "03ded61ad98aa0d4514d22a63d1cb3808c75fe2dc4e7ecbfed5ee47efc830f474d7a07d179cb465a84581e92f7c6e8cf2968a420d471c7af7495ee0c451fe7fe",
+      "head": "v6",
+      "inventorySha512": "8e15d4dad881188a773cc9ad0d2a9683e713f8d56e41b064bfc51294e0c6af05deda25d842e182335d883e67fab9f4246748546eff26feee721e3c5065026654",
+      "status": "active"
+    },
+    {
+      "id": "seminar-autumn-2026",
+      "kind": "collection",
+      "head": "v1",
+      "inventorySha512": "68e5c2b7a3fc2af6ce7a36469af52f776225a65b14e120b6fb69ce10a5ab6f705011a8f76983cb2abe40dd474b6de07d9141dd4e0e10e5930ede667de1db3072",
       "status": "active"
     }
   ]

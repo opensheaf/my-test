@@ -20,3 +20,5 @@ members:
   id: fractional-phi42-mass-gap
 - archive: https://opensheaf.github.io/my-test/
   id: random-walks
+- archive: https://opensheaf.github.io/my-test/
+  id: seminar-autumn-2026
