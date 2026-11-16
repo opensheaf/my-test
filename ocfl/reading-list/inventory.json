@@ -2,7 +2,7 @@
   "id": "reading-list",
   "type": "https://ocfl.io/1.1/spec/#inventory",
   "digestAlgorithm": "sha512",
-  "head": "v1",
+  "head": "v2",
   "contentDirectory": "content",
   "manifest": {
     "639e79284445caedfa3435d9106aaa7d53130ad020dda8b0646e6c0a518320dc6b505ceaa8286d3e79d73945c0e13a5445293e07b6268ea6c27d426ae5ff5332": [
@@ -13,6 +13,15 @@
     ],
     "47e59bbdd3d0385edd8bc7b4ab865d2836dcd6e5202d812bdf13b261128431cf899842518d57ac49f260ea2e840d252f179c56fec8744f3b28c6e220ba78b0a0": [
       "v1/content/object.json"
+    ],
+    "9e227bf100de7fc5ac57bb7685801c6314bbb5c6d7ade9ff44777e33d0076ace3230bf1216d96b26eed741714dc4dd0c70f07586071d97a39e0cb38cd529830b": [
+      "v2/content/datacite.json"
+    ],
+    "8066b0b557d0a2af596e9e6044fffa81a4530b6d2c5a9071d09297b9b17ffdf328a109df07f5f31a4c5c20d68b553baf391e1d9352a16f872d677d3aed2fe00a": [
+      "v2/content/members.json"
+    ],
+    "67301cc9b95382ccae035d624bf9265226b3352eb75677f58da794fdbcf05887aa62e2f3e7d7779a3ba5af524e605af4497671cf25f72931555cfbbd16823336": [
+      "v2/content/object.json"
     ]
   },
   "versions": {
@@ -34,6 +43,25 @@
           "object.json"
         ]
       }
+    },
+    "v2": {
+      "created": "2026-11-16T00:11:58Z",
+      "message": "Add paracontrolled-distributions from https://mgubi.org/papers/ to reading-list (request 20261116-001134-tafi)",
+      "user": {
+        "name": "Massimiliano Gubinelli",
+        "address": "https://opensheaf.github.io/my-test/"
+      },
+      "state": {
+        "9e227bf100de7fc5ac57bb7685801c6314bbb5c6d7ade9ff44777e33d0076ace3230bf1216d96b26eed741714dc4dd0c70f07586071d97a39e0cb38cd529830b": [
+          "datacite.json"
+        ],
+        "8066b0b557d0a2af596e9e6044fffa81a4530b6d2c5a9071d09297b9b17ffdf328a109df07f5f31a4c5c20d68b553baf391e1d9352a16f872d677d3aed2fe00a": [
+          "members.json"
+        ],
+        "67301cc9b95382ccae035d624bf9265226b3352eb75677f58da794fdbcf05887aa62e2f3e7d7779a3ba5af524e605af4497671cf25f72931555cfbbd16823336": [
+          "object.json"
+        ]
+      }
     }
   },
   "fixity": {
@@ -46,6 +74,15 @@
       ],
       "3ad589c0609f3ab5b1ce66d5bb21e31b": [
         "v1/content/object.json"
+      ],
+      "bddc2daf26f48219f1d9e65a1ff344ad": [
+        "v2/content/datacite.json"
+      ],
+      "9bf7b7174e4ebabd157ce4f2b7f284a0": [
+        "v2/content/members.json"
+      ],
+      "68102382e409c69ae7801842f4bc5b5c": [
+        "v2/content/object.json"
       ]
     },
     "sha256": {
@@ -57,6 +94,15 @@
       ],
       "44f4e70a10dd952755506464b479802824c5349938255abb2584a78d58edc6de": [
         "v1/content/object.json"
+      ],
+      "6cf214e0e7ec0e9feba49b8753e6617090120febf4066dddad0ca17c414a6208": [
+        "v2/content/datacite.json"
+      ],
+      "ddd2f1d3a8adfc934acf91412010937acb772786a7288af8815335c2d8eb42a8": [
+        "v2/content/members.json"
+      ],
+      "8c8c7a9175ac86f7f533b853da5f9d677e836d1a338da080975b77aba80fae50": [
+        "v2/content/object.json"
       ]
     }
   }

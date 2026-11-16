@@ -9,4 +9,8 @@ description: Papers on the stochastic quantisation of Euclidean field theories, 
   archives they are kept in.
 type: selection
 order: manual
-members: []
+members:
+- archive: https://mgubi.org/papers/
+  id: paracontrolled-distributions
+  revisions:
+  - 5
