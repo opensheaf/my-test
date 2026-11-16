@@ -2,7 +2,7 @@
   "id": "reading-list",
   "type": "https://ocfl.io/1.1/spec/#inventory",
   "digestAlgorithm": "sha512",
-  "head": "v7",
+  "head": "v8",
   "contentDirectory": "content",
   "manifest": {
     "639e79284445caedfa3435d9106aaa7d53130ad020dda8b0646e6c0a518320dc6b505ceaa8286d3e79d73945c0e13a5445293e07b6268ea6c27d426ae5ff5332": [
@@ -67,6 +67,15 @@
     ],
     "869867faf670601984850b90af9493b526779811a8594333dce7baac558d9d3c6878ff26fa77571ac948da4aea2b69d4a4539ab2e28c98e559b09ee0b8b84929": [
       "v7/content/object.json"
+    ],
+    "9550f60deb1bfd117447a7da2a9e59cfaa4b78781784035fd2e1858561c33aa64566474bc5359343a8b4ca5587170393604adb5d12a43121279e44eed489fd04": [
+      "v8/content/datacite.json"
+    ],
+    "b88e0a2ce17a8e03c7446cb563c12062f20ccc5aa9f22963f352754e85da3cb8df316e9ae859114ba9539181f281f962cf9b3180c4a5a686edabc7bf62c7ca14": [
+      "v8/content/members.json"
+    ],
+    "b3d3b93b9ad4da5f3816b52bb48fa2a2df080a239dd21ed36ef95c6218462921955282753edbac0c1a649303ee0037202c7dc7942daf73ccb2d5d784d6c089c6": [
+      "v8/content/object.json"
     ]
   },
   "versions": {
@@ -202,6 +211,25 @@
           "object.json"
         ]
       }
+    },
+    "v8": {
+      "created": "2026-11-16T00:15:07Z",
+      "message": "Add sine-gordon-fbsde from https://mgubi.org/papers/ to seminar-autumn-2026 (request 20261116-001439-izws)",
+      "user": {
+        "name": "Massimiliano Gubinelli",
+        "address": "https://opensheaf.github.io/my-test/"
+      },
+      "state": {
+        "9550f60deb1bfd117447a7da2a9e59cfaa4b78781784035fd2e1858561c33aa64566474bc5359343a8b4ca5587170393604adb5d12a43121279e44eed489fd04": [
+          "datacite.json"
+        ],
+        "b88e0a2ce17a8e03c7446cb563c12062f20ccc5aa9f22963f352754e85da3cb8df316e9ae859114ba9539181f281f962cf9b3180c4a5a686edabc7bf62c7ca14": [
+          "members.json"
+        ],
+        "b3d3b93b9ad4da5f3816b52bb48fa2a2df080a239dd21ed36ef95c6218462921955282753edbac0c1a649303ee0037202c7dc7942daf73ccb2d5d784d6c089c6": [
+          "object.json"
+        ]
+      }
     }
   },
   "fixity": {
@@ -268,6 +296,15 @@
       ],
       "0bef1dc5b369e40e849fd7bba83d9ab3": [
         "v7/content/object.json"
+      ],
+      "9b318f7d587622e42ac4d9e66e7d90b5": [
+        "v8/content/datacite.json"
+      ],
+      "283af039870a1d35806522a84d5257dd": [
+        "v8/content/members.json"
+      ],
+      "153292369c8872ea404c7c00e9a8668e": [
+        "v8/content/object.json"
       ]
     },
     "sha256": {
@@ -333,6 +370,15 @@
       ],
       "76827388213a24f98e791e71a1cb1d58e587ada5512df216491608901048a03d": [
         "v7/content/object.json"
+      ],
+      "58d469183bbb6d0f29ca0ac70e1ad3ead17fc1276ab384a85746d116f20b146c": [
+        "v8/content/datacite.json"
+      ],
+      "b33c9dc4a6795b3e461a9210a31b18b7be5ab0d1c445b430eba8608a1f1994f4": [
+        "v8/content/members.json"
+      ],
+      "379a2163201dfb17e9fb1a9e1140acb82011910eef1e3bfab7f71d6218dfcda8": [
+        "v8/content/object.json"
       ]
     }
   }

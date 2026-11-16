@@ -11,3 +11,5 @@ order: manual
 members:
 - archive: https://opensheaf.github.io/my-test/
   id: heat-notes
+- archive: https://mgubi.org/papers/
+  id: sine-gordon-fbsde

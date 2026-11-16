@@ -42,15 +42,15 @@
     {
       "id": "reading-list",
       "kind": "collection",
-      "head": "v7",
-      "inventorySha512": "1faaf297b5b247257c832f0971f60ae4b3ad1dbc2d16fba30025f6d0285c4e6c6e9d96c38ec358ec93a8c821fbcf918568cb2f07c5a5bb09193a024666f693b6",
+      "head": "v8",
+      "inventorySha512": "f635d0c19180346f867a43794de620735e9abb5454df6e2d91ba9280d641c9035466bb6904f0df9c9edc231c03b2f89009c6ad22d0e7957a52e3669bfdb81cb2",
       "status": "active"
     },
     {
       "id": "seminar-autumn-2026",
       "kind": "collection",
-      "head": "v2",
-      "inventorySha512": "f604a6ac262023fb5cd1cdebd6992d10828d69e879b32e7d36b357c630a9c5eab330aaea78ec0e4233f2bd43c8ca82244d02cbe78bca2e01db5047685c9d6382",
+      "head": "v3",
+      "inventorySha512": "84412b7a90897c3e1440976356349915c27f0d7fadf027c6db14be3eef456aec284258750d832ab6cec9517bc0509dac091559e762fab4ffd2f47dfc496aad78",
       "status": "active"
     }
   ]
