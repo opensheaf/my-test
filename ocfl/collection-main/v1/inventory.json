@@ -8,7 +8,7 @@
     "00ce9d559e09db7555aced25d894da1ffb3e934ba8e8ceae0a87a17ef384754f4c59962ce81e08cc724d240a4430b77666a3dc765a474d8d6c50b7a23f2ddf1f": [
       "v1/content/datacite.json"
     ],
-    "b2e565700e1e4e5dd3aabb481c6d07a21084dd7e8d23734c9d6f6b200839f78f49ce97b37e690ed93c9439ec852378c81a22a738a2d5079f2466bff6376d5420": [
+    "cf6d627784133e5015c166fa5423ad7860db978e82ac0d6df356736fe7d2775f2e605337e8eaa40ae7f44f2a3e37ede46e79ea4ed9f90003a624b69b1e87d5d6": [
       "v1/content/members.json"
     ],
     "5a4cf7a1b7926f6c49e67cf1037f651c990508f929aa0dd9a5d1fb52505b9e6770d6ae9b2f9b65d47723529da41813e6261accc8e69666358fafd70c1e9cbbde": [
@@ -17,8 +17,8 @@
   },
   "versions": {
     "v1": {
-      "created": "2026-11-16T00:05:08Z",
-      "message": "Collection version 1: 0 documents",
+      "created": "2026-11-16T00:55:41Z",
+      "message": "Collection version 1: 4 documents",
       "user": {
         "name": "Massimiliano Gubinelli",
         "address": "https://opensheaf.github.io/my-test/"
@@ -27,7 +27,7 @@
         "00ce9d559e09db7555aced25d894da1ffb3e934ba8e8ceae0a87a17ef384754f4c59962ce81e08cc724d240a4430b77666a3dc765a474d8d6c50b7a23f2ddf1f": [
           "datacite.json"
         ],
-        "b2e565700e1e4e5dd3aabb481c6d07a21084dd7e8d23734c9d6f6b200839f78f49ce97b37e690ed93c9439ec852378c81a22a738a2d5079f2466bff6376d5420": [
+        "cf6d627784133e5015c166fa5423ad7860db978e82ac0d6df356736fe7d2775f2e605337e8eaa40ae7f44f2a3e37ede46e79ea4ed9f90003a624b69b1e87d5d6": [
           "members.json"
         ],
         "5a4cf7a1b7926f6c49e67cf1037f651c990508f929aa0dd9a5d1fb52505b9e6770d6ae9b2f9b65d47723529da41813e6261accc8e69666358fafd70c1e9cbbde": [
@@ -41,7 +41,7 @@
       "8b47eedc370b7d3bbc392944f9462860": [
         "v1/content/datacite.json"
       ],
-      "fb5717d064f27e815f524045a64a7f58": [
+      "7fea1a1fe989b00d064876b4817f88dd": [
         "v1/content/members.json"
       ],
       "1fd2176be67566105f8b48115a1bd123": [
@@ -52,7 +52,7 @@
       "0bbc4be1433952f591cb78e7c77574d1c16604014e247b632ed573ceed0bec88": [
         "v1/content/datacite.json"
       ],
-      "2b1ac3729e8a8acf761f7306b6e42c37536dfe1994486ae873a775597f76c01a": [
+      "f241d226f142646b79e4d1c846d3c4ae90db7bd3c7f24bbf5caa55b6512b165a": [
         "v1/content/members.json"
       ],
       "275516902e7e2efc07a628b5ed7fc451165b2419e9c7c7a680d944fbe7976a8b": [

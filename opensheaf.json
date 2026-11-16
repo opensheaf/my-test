@@ -14,8 +14,8 @@
     {
       "id": "collection-main",
       "kind": "collection",
-      "head": "v7",
-      "inventorySha512": "4acd8d241e507319ce33a0e703c2abdffbd71d9081026f800ecff551720bc6fa94308a12e03e56bd98698ffc087d20ad656833bdac5ab4067b424049a5cae079",
+      "head": "v1",
+      "inventorySha512": "8a6ba4607db53024c56ba3f52eacdd3129538474fb46827445823156e8675806214a622bbc7e7fc699507b3ef2ee855e9d2a3e5e5a1ec726c217e2427b8ac946",
       "status": "active"
     },
     {
@@ -29,7 +29,7 @@
       "id": "ibp-exponential",
       "kind": "document",
       "head": "v1",
-      "inventorySha512": "adb150ab531fc30870f1975601327d974b032e16acbba26572c0ea0f88da82c9ffc2bbb0116765298978e5293bdf2e490a4137e050dd53a6e6810f81cbab801f",
+      "inventorySha512": "617ec0bd9cc57510ccd8291a542261e5f807841527109f676ae6c54871399da1fcf154d405ddb6ba11c00ba9c9606aa14ce3e415c37dd5fb61bd1f6be0e5fc85",
       "status": "active"
     },
     {
@@ -49,15 +49,15 @@
     {
       "id": "reading-list",
       "kind": "collection",
-      "head": "v9",
-      "inventorySha512": "02887d457a79a44d7b3cfc6f7fd1c366b7e6ab77f64a5268aa7d5876a95dfbb1c033e061d807ce2daf7e9441d96ff88e0c7e43d220db73e55c02e32613d7bf87",
+      "head": "v1",
+      "inventorySha512": "f5546bccc1074a4cce5c90e2b2ac3b8e6e3251723fdc390cbb80c66fc7b5f2b4970d68d31b1f56bdd07c6ce9acdef5500fb44bc7cba3bc6fefd1b40ec546b0af",
       "status": "active"
     },
     {
       "id": "seminar-autumn-2026",
       "kind": "collection",
-      "head": "v3",
-      "inventorySha512": "84412b7a90897c3e1440976356349915c27f0d7fadf027c6db14be3eef456aec284258750d832ab6cec9517bc0509dac091559e762fab4ffd2f47dfc496aad78",
+      "head": "v1",
+      "inventorySha512": "dea006cacca7ae585dd738fc06b1e6f64d94749e2b52462aff8f0505ec12dbd126f34a9dc5a9905f024d0cb7a189a9a3a8e3edd99676b6c0f05eb9d11463565e",
       "status": "active"
     }
   ]

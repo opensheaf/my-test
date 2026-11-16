@@ -2,41 +2,23 @@
   "id": "seminar-autumn-2026",
   "type": "https://ocfl.io/1.1/spec/#inventory",
   "digestAlgorithm": "sha512",
-  "head": "v3",
+  "head": "v1",
   "contentDirectory": "content",
   "manifest": {
     "f6c060dad41c6c3744c1282fe5a642fb72fe6f076f4a0ab6269902dfe1327f9816cd8c6db2cd2acade33de39e1e3e95b0dcdd758061ef3b7e0fb80ab33b6e42a": [
       "v1/content/datacite.json"
     ],
-    "b937b8c8f74a4b7a0aabe66f310c6ccb8af392d4b76347b73a8e4b0fe7c19962e3f222cb2eb48b04660fd229fbed5709c30608f94317f4b54532a3c53e629d48": [
+    "2d19afdaba6198ac57e0323c2ce77c72631bae286a76f684daf9936085c0337a1d2e2059dcc0356bde79fe9dd51d8ea06d22f4e71eef4296e1a8c5d065ba6f1c": [
       "v1/content/members.json"
     ],
     "53512d963084b2c70081ddcacbe05ac02dd7548cf4c9f1782ab401605c78cc13dad7f51d0b4fcdc51b971569f032f7fe7bc6511546a4bb53ea1af1076cdee1d2": [
       "v1/content/object.json"
-    ],
-    "2a86f8b802d28187775158ae4ebf6d58ee39011c18fd6d908e5493c8851ecb8d93a6d5bb38f7a87c7a7dadcdf6d786d3c402ab9ccc6a29eb48364ecd7f598d0d": [
-      "v2/content/datacite.json"
-    ],
-    "1a1a11a4a40c6d88f780107554e1cd918192688e59a5786b392bd09583b3be6e0c62a1dac96a0f0af382e9d7d9ee3b45b2125ee0c2a1779640f74923ab0d1a21": [
-      "v2/content/members.json"
-    ],
-    "ee44d02d79d134ec659e5c2b9cf8c946b864cf0278f2e2a9cca0acb9eac5895fd2e6969b0434ba11321c0356d87376e883c8647d80e87b7f801b99409e4fc969": [
-      "v2/content/object.json"
-    ],
-    "c19e6567a0f7c0b01362ca86a118bfcadea46550140320e09fca8cb188bd33bc0a20c7de334fce32b70f4c4275445f01cbe4617c197b4f6e2aa684a82925f3ee": [
-      "v3/content/datacite.json"
-    ],
-    "4fadeea03ad297eb456f86c0c67b80e7ad0869186df0b4f3599378fadabecdc63c1e96dc585d841fd9802913c599b3d3597133f132da9f64ff44f3571b165a0d": [
-      "v3/content/members.json"
-    ],
-    "cef4385142b986555ba234218035d5c586506b779543c5b9f7057628f428a56a4814f1772f1fce747c1e277fa2c8b0c26ee866c93d79584db9a51010328ed27f": [
-      "v3/content/object.json"
     ]
   },
   "versions": {
     "v1": {
-      "created": "2026-11-16T00:13:59Z",
-      "message": "New collection seminar-autumn-2026 (request 20261116-001338-snyp)",
+      "created": "2026-11-16T00:55:03Z",
+      "message": "Collection made again (draft rebuild)",
       "user": {
         "name": "Massimiliano Gubinelli",
         "address": "https://opensheaf.github.io/my-test/"
@@ -45,48 +27,10 @@
         "f6c060dad41c6c3744c1282fe5a642fb72fe6f076f4a0ab6269902dfe1327f9816cd8c6db2cd2acade33de39e1e3e95b0dcdd758061ef3b7e0fb80ab33b6e42a": [
           "datacite.json"
         ],
-        "b937b8c8f74a4b7a0aabe66f310c6ccb8af392d4b76347b73a8e4b0fe7c19962e3f222cb2eb48b04660fd229fbed5709c30608f94317f4b54532a3c53e629d48": [
+        "2d19afdaba6198ac57e0323c2ce77c72631bae286a76f684daf9936085c0337a1d2e2059dcc0356bde79fe9dd51d8ea06d22f4e71eef4296e1a8c5d065ba6f1c": [
           "members.json"
         ],
         "53512d963084b2c70081ddcacbe05ac02dd7548cf4c9f1782ab401605c78cc13dad7f51d0b4fcdc51b971569f032f7fe7bc6511546a4bb53ea1af1076cdee1d2": [
-          "object.json"
-        ]
-      }
-    },
-    "v2": {
-      "created": "2026-11-16T00:14:35Z",
-      "message": "Add heat-notes from https://opensheaf.github.io/my-test/ to seminar-autumn-2026 (request 20261116-001405-dsqd)",
-      "user": {
-        "name": "Massimiliano Gubinelli",
-        "address": "https://opensheaf.github.io/my-test/"
-      },
-      "state": {
-        "2a86f8b802d28187775158ae4ebf6d58ee39011c18fd6d908e5493c8851ecb8d93a6d5bb38f7a87c7a7dadcdf6d786d3c402ab9ccc6a29eb48364ecd7f598d0d": [
-          "datacite.json"
-        ],
-        "1a1a11a4a40c6d88f780107554e1cd918192688e59a5786b392bd09583b3be6e0c62a1dac96a0f0af382e9d7d9ee3b45b2125ee0c2a1779640f74923ab0d1a21": [
-          "members.json"
-        ],
-        "ee44d02d79d134ec659e5c2b9cf8c946b864cf0278f2e2a9cca0acb9eac5895fd2e6969b0434ba11321c0356d87376e883c8647d80e87b7f801b99409e4fc969": [
-          "object.json"
-        ]
-      }
-    },
-    "v3": {
-      "created": "2026-11-16T00:15:04Z",
-      "message": "Add sine-gordon-fbsde from https://mgubi.org/papers/ to seminar-autumn-2026 (request 20261116-001439-izws)",
-      "user": {
-        "name": "Massimiliano Gubinelli",
-        "address": "https://opensheaf.github.io/my-test/"
-      },
-      "state": {
-        "c19e6567a0f7c0b01362ca86a118bfcadea46550140320e09fca8cb188bd33bc0a20c7de334fce32b70f4c4275445f01cbe4617c197b4f6e2aa684a82925f3ee": [
-          "datacite.json"
-        ],
-        "4fadeea03ad297eb456f86c0c67b80e7ad0869186df0b4f3599378fadabecdc63c1e96dc585d841fd9802913c599b3d3597133f132da9f64ff44f3571b165a0d": [
-          "members.json"
-        ],
-        "cef4385142b986555ba234218035d5c586506b779543c5b9f7057628f428a56a4814f1772f1fce747c1e277fa2c8b0c26ee866c93d79584db9a51010328ed27f": [
           "object.json"
         ]
       }
@@ -97,58 +41,22 @@
       "4b29016f6bc552c4a2189615d74913d0": [
         "v1/content/datacite.json"
       ],
-      "cada516acdecf3fd888b3b9217b135e8": [
+      "3624c9efd5b90495fd1bcbba3645ade2": [
         "v1/content/members.json"
       ],
       "6f2846c5c085dce63d8c9355bc1b1767": [
         "v1/content/object.json"
-      ],
-      "e8b9a5f1d8075360edbb58eee2c7cdb3": [
-        "v2/content/datacite.json"
-      ],
-      "9dca2d923966a6ffbedfdef7e594adbb": [
-        "v2/content/members.json"
-      ],
-      "b4a5b5710cc35af7480820a89b31ac6b": [
-        "v2/content/object.json"
-      ],
-      "fb140b5ed58132244b6e39130dec1dd3": [
-        "v3/content/datacite.json"
-      ],
-      "f6ad0c8f09b53fb8c85317c33ce87e37": [
-        "v3/content/members.json"
-      ],
-      "500b93556612e6f807779326b33215b7": [
-        "v3/content/object.json"
       ]
     },
     "sha256": {
       "de50dbe10f909a8a37c6cd5507a64f8362e2dafe26f589e17f4c70f84fb0bedd": [
         "v1/content/datacite.json"
       ],
-      "6eb25de99ed98052b29d2a2e45c40a5c1f03028b0e50064a4279d28ac92c4244": [
+      "a4e60c9c76fcf51cb73692dc68e54bd410b17495532bc31a4fea385488dc6279": [
         "v1/content/members.json"
       ],
       "ac4ef3f158add3f228d07ea66f9c650c8ac0b048f7505644180844da41b5c4fa": [
         "v1/content/object.json"
-      ],
-      "ef941835fb4280e67f6405053558be366e5158a4bed787a22047a14cd245ad98": [
-        "v2/content/datacite.json"
-      ],
-      "99c7033670b15948595beaa439181a26650c8cdb9955480c983533edc9ba2e89": [
-        "v2/content/members.json"
-      ],
-      "4ac559698875942dd0ef1770f3867e967b26641fa24f8d2e2650f190e20e7577": [
-        "v2/content/object.json"
-      ],
-      "d81a9ba114407de0a2a0ca8c6bab56cb308cd7487f556c924a244de613552d4e": [
-        "v3/content/datacite.json"
-      ],
-      "a7f18da2633ad14a74e389b541fbc7fc4f3e851d9e5fdbda633bccb6a37a964b": [
-        "v3/content/members.json"
-      ],
-      "9656d104bcf451d0982d398a61911246b275cc8414128da3b166e6044be9f6a3": [
-        "v3/content/object.json"
       ]
     }
   }

@@ -2,77 +2,23 @@
   "id": "collection-main",
   "type": "https://ocfl.io/1.1/spec/#inventory",
   "digestAlgorithm": "sha512",
-  "head": "v7",
+  "head": "v1",
   "contentDirectory": "content",
   "manifest": {
     "00ce9d559e09db7555aced25d894da1ffb3e934ba8e8ceae0a87a17ef384754f4c59962ce81e08cc724d240a4430b77666a3dc765a474d8d6c50b7a23f2ddf1f": [
       "v1/content/datacite.json"
     ],
-    "b2e565700e1e4e5dd3aabb481c6d07a21084dd7e8d23734c9d6f6b200839f78f49ce97b37e690ed93c9439ec852378c81a22a738a2d5079f2466bff6376d5420": [
+    "cf6d627784133e5015c166fa5423ad7860db978e82ac0d6df356736fe7d2775f2e605337e8eaa40ae7f44f2a3e37ede46e79ea4ed9f90003a624b69b1e87d5d6": [
       "v1/content/members.json"
     ],
     "5a4cf7a1b7926f6c49e67cf1037f651c990508f929aa0dd9a5d1fb52505b9e6770d6ae9b2f9b65d47723529da41813e6261accc8e69666358fafd70c1e9cbbde": [
       "v1/content/object.json"
-    ],
-    "fcb4b84fa694420121a5e2b14c61c277ddff63712256cd75c6ee477c7f7dbec8881ff3064720315e0e1886e8089c4591aa041b5a8bfdf501122927e04fd1053d": [
-      "v2/content/datacite.json"
-    ],
-    "d067194f2af086f894165a7b5caf91003b89144b87bdfdbf9b6da4c3893306aa6957064512f43e2bc92a2d0b1b0dff44f0d324ab3fe9be6b9f33be4ae17918ab": [
-      "v2/content/members.json"
-    ],
-    "6095b87a0008b5da4761cb6cffb3f8a610722c998e292c53d89627d2298bd9702ade3d510c00908c6c93c6a89ec641026839bf75042c917d3c34c199f17270b4": [
-      "v2/content/object.json"
-    ],
-    "f099d64f0bc6162a7d79ee4bf069bfaa4d31be72d3246c5efc58aaee0219c8a97ad06f615a0ba1a462e96c43bf3ca343a5460c7c84ffa98bd6d0f105fb6252d7": [
-      "v3/content/datacite.json"
-    ],
-    "77600bb8b16040029cf33b9a9326c3094fdd667cab00066f7e2866b25a8d801f078e60ef7995a1744e38a69d06da57946534dd7c17e8c3226b94fb30b704523e": [
-      "v3/content/members.json"
-    ],
-    "eb33de855b8300d39395390d57a44edd52cf3384afaa507d6cbaa9c93e062dfc467d9447b087a410d1b7c7b1fddf3b1990872397c52c6ae315d03b824c83531e": [
-      "v3/content/object.json"
-    ],
-    "6a27942183fdd56241980429f82a52788770222950a85a160d9c21bcf4dc003ba3f01da17dde3fc0c18cd3a881dc2996095b679fd86fbbf73d37bbd9eb722f33": [
-      "v4/content/datacite.json"
-    ],
-    "a8d7f11479f448b81088f6693080bb6517d63beb2af32ecbf11067e860f04a54ecf69206222aafb13ae12c58a4a1aea602578bf37e061ce5ea3be4f7d927c288": [
-      "v4/content/members.json"
-    ],
-    "e7ece4bd46aba71673a6e98ad1c68eb54dd48e88887453a7e265267e1b1afefe14f40917516f7c2077a5ec6f2a19a2a34762a1978d7ff2528d436d860a2723e5": [
-      "v4/content/object.json"
-    ],
-    "fa0ba871380182da637b201fa2a04e18d73399f5f8eefeca78399d9ccef0e86db6a893406d00fbb854e793886f5403c652ecec3ead17fcadbb549fe576445b9c": [
-      "v5/content/datacite.json"
-    ],
-    "7270eb4d6f3b618bf85b9c672d52ac2e2384db51d23ec60fff37303a97aa526273fda819090fd7eb68aa7bc55d8d1f4cad1cec84838244a9259a60497b6f7553": [
-      "v5/content/members.json"
-    ],
-    "6abebc9038325727f6187c9773f208ebbd86fe53a6bb7c362e597aafbd837493fba418de7ccfe48258d140bd731d369b5ad8bbe0a8ef6ad28ddea84bb777b40f": [
-      "v5/content/object.json"
-    ],
-    "a4c49d19970a6877079e0010fed9c48b967e821955dc14fe9a0ac43fa0dd49c71909b6f7988dbc2a60e615bcd18c051801d04cb75fbb088eaf77627a85724fd6": [
-      "v6/content/datacite.json"
-    ],
-    "5edd5b76e79a5ba479b14359bfc43e616f02b247fb13651faac41ab78c3ba1a7642db18bfe9970fa16f2663afb68f9386880ae2e1c44b8492a1586017bbb357b": [
-      "v6/content/members.json"
-    ],
-    "760d154cc202113edbd4e8bd6ff33b2ebd8809663a556dc110fc44ce255573ebb91856abe7fc2d6d0b7172c494c1878c0c0c2c625aa4e613e64969d055238d1b": [
-      "v6/content/object.json"
-    ],
-    "a8eaa28297556a99d7cb66abd0ed892a5ea3ffe75b0b49c7cf659cae470ad632db5a05e164f13b3242011bd33e2c0f26f4cc0928f86e75c139b1a9998175b289": [
-      "v7/content/datacite.json"
-    ],
-    "6ba3f04162a1c724f848a1052610a7d1b6b32db96b955ceacd75d8b63101bb03310dd824c99fca6b7cfb61b9386acd216bd63c449cb830a5b6323a4e4b79e4e9": [
-      "v7/content/members.json"
-    ],
-    "06bf8f7ddc9e5698df94b3f4533d734e3b759a19506de61ae084e8a7bbf10b67150a432e014b4e67793c3c614be802b57b02a36e81a5b8a31a68e3afe76a24b9": [
-      "v7/content/object.json"
     ]
   },
   "versions": {
     "v1": {
-      "created": "2026-11-16T00:05:08Z",
-      "message": "Collection version 1: 0 documents",
+      "created": "2026-11-16T00:55:41Z",
+      "message": "Collection version 1: 4 documents",
       "user": {
         "name": "Massimiliano Gubinelli",
         "address": "https://opensheaf.github.io/my-test/"
@@ -81,124 +27,10 @@
         "00ce9d559e09db7555aced25d894da1ffb3e934ba8e8ceae0a87a17ef384754f4c59962ce81e08cc724d240a4430b77666a3dc765a474d8d6c50b7a23f2ddf1f": [
           "datacite.json"
         ],
-        "b2e565700e1e4e5dd3aabb481c6d07a21084dd7e8d23734c9d6f6b200839f78f49ce97b37e690ed93c9439ec852378c81a22a738a2d5079f2466bff6376d5420": [
+        "cf6d627784133e5015c166fa5423ad7860db978e82ac0d6df356736fe7d2775f2e605337e8eaa40ae7f44f2a3e37ede46e79ea4ed9f90003a624b69b1e87d5d6": [
           "members.json"
         ],
         "5a4cf7a1b7926f6c49e67cf1037f651c990508f929aa0dd9a5d1fb52505b9e6770d6ae9b2f9b65d47723529da41813e6261accc8e69666358fafd70c1e9cbbde": [
-          "object.json"
-        ]
-      }
-    },
-    "v2": {
-      "created": "2026-11-16T00:08:35Z",
-      "message": "Collection version 2: 1 documents",
-      "user": {
-        "name": "Massimiliano Gubinelli",
-        "address": "https://opensheaf.github.io/my-test/"
-      },
-      "state": {
-        "fcb4b84fa694420121a5e2b14c61c277ddff63712256cd75c6ee477c7f7dbec8881ff3064720315e0e1886e8089c4591aa041b5a8bfdf501122927e04fd1053d": [
-          "datacite.json"
-        ],
-        "d067194f2af086f894165a7b5caf91003b89144b87bdfdbf9b6da4c3893306aa6957064512f43e2bc92a2d0b1b0dff44f0d324ab3fe9be6b9f33be4ae17918ab": [
-          "members.json"
-        ],
-        "6095b87a0008b5da4761cb6cffb3f8a610722c998e292c53d89627d2298bd9702ade3d510c00908c6c93c6a89ec641026839bf75042c917d3c34c199f17270b4": [
-          "object.json"
-        ]
-      }
-    },
-    "v3": {
-      "created": "2026-11-16T00:09:07Z",
-      "message": "Collection version 3: 1 documents",
-      "user": {
-        "name": "Massimiliano Gubinelli",
-        "address": "https://opensheaf.github.io/my-test/"
-      },
-      "state": {
-        "f099d64f0bc6162a7d79ee4bf069bfaa4d31be72d3246c5efc58aaee0219c8a97ad06f615a0ba1a462e96c43bf3ca343a5460c7c84ffa98bd6d0f105fb6252d7": [
-          "datacite.json"
-        ],
-        "77600bb8b16040029cf33b9a9326c3094fdd667cab00066f7e2866b25a8d801f078e60ef7995a1744e38a69d06da57946534dd7c17e8c3226b94fb30b704523e": [
-          "members.json"
-        ],
-        "eb33de855b8300d39395390d57a44edd52cf3384afaa507d6cbaa9c93e062dfc467d9447b087a410d1b7c7b1fddf3b1990872397c52c6ae315d03b824c83531e": [
-          "object.json"
-        ]
-      }
-    },
-    "v4": {
-      "created": "2026-11-16T00:09:51Z",
-      "message": "Collection version 4: 2 documents",
-      "user": {
-        "name": "Massimiliano Gubinelli",
-        "address": "https://opensheaf.github.io/my-test/"
-      },
-      "state": {
-        "6a27942183fdd56241980429f82a52788770222950a85a160d9c21bcf4dc003ba3f01da17dde3fc0c18cd3a881dc2996095b679fd86fbbf73d37bbd9eb722f33": [
-          "datacite.json"
-        ],
-        "a8d7f11479f448b81088f6693080bb6517d63beb2af32ecbf11067e860f04a54ecf69206222aafb13ae12c58a4a1aea602578bf37e061ce5ea3be4f7d927c288": [
-          "members.json"
-        ],
-        "e7ece4bd46aba71673a6e98ad1c68eb54dd48e88887453a7e265267e1b1afefe14f40917516f7c2077a5ec6f2a19a2a34762a1978d7ff2528d436d860a2723e5": [
-          "object.json"
-        ]
-      }
-    },
-    "v5": {
-      "created": "2026-11-16T00:10:28Z",
-      "message": "Collection version 5: 3 documents",
-      "user": {
-        "name": "Massimiliano Gubinelli",
-        "address": "https://opensheaf.github.io/my-test/"
-      },
-      "state": {
-        "fa0ba871380182da637b201fa2a04e18d73399f5f8eefeca78399d9ccef0e86db6a893406d00fbb854e793886f5403c652ecec3ead17fcadbb549fe576445b9c": [
-          "datacite.json"
-        ],
-        "7270eb4d6f3b618bf85b9c672d52ac2e2384db51d23ec60fff37303a97aa526273fda819090fd7eb68aa7bc55d8d1f4cad1cec84838244a9259a60497b6f7553": [
-          "members.json"
-        ],
-        "6abebc9038325727f6187c9773f208ebbd86fe53a6bb7c362e597aafbd837493fba418de7ccfe48258d140bd731d369b5ad8bbe0a8ef6ad28ddea84bb777b40f": [
-          "object.json"
-        ]
-      }
-    },
-    "v6": {
-      "created": "2026-11-16T00:11:03Z",
-      "message": "Collection version 6: 3 documents",
-      "user": {
-        "name": "Massimiliano Gubinelli",
-        "address": "https://opensheaf.github.io/my-test/"
-      },
-      "state": {
-        "a4c49d19970a6877079e0010fed9c48b967e821955dc14fe9a0ac43fa0dd49c71909b6f7988dbc2a60e615bcd18c051801d04cb75fbb088eaf77627a85724fd6": [
-          "datacite.json"
-        ],
-        "5edd5b76e79a5ba479b14359bfc43e616f02b247fb13651faac41ab78c3ba1a7642db18bfe9970fa16f2663afb68f9386880ae2e1c44b8492a1586017bbb357b": [
-          "members.json"
-        ],
-        "760d154cc202113edbd4e8bd6ff33b2ebd8809663a556dc110fc44ce255573ebb91856abe7fc2d6d0b7172c494c1878c0c0c2c625aa4e613e64969d055238d1b": [
-          "object.json"
-        ]
-      }
-    },
-    "v7": {
-      "created": "2026-11-16T00:16:31Z",
-      "message": "Collection version 7: 4 documents",
-      "user": {
-        "name": "Massimiliano Gubinelli",
-        "address": "https://opensheaf.github.io/my-test/"
-      },
-      "state": {
-        "a8eaa28297556a99d7cb66abd0ed892a5ea3ffe75b0b49c7cf659cae470ad632db5a05e164f13b3242011bd33e2c0f26f4cc0928f86e75c139b1a9998175b289": [
-          "datacite.json"
-        ],
-        "6ba3f04162a1c724f848a1052610a7d1b6b32db96b955ceacd75d8b63101bb03310dd824c99fca6b7cfb61b9386acd216bd63c449cb830a5b6323a4e4b79e4e9": [
-          "members.json"
-        ],
-        "06bf8f7ddc9e5698df94b3f4533d734e3b759a19506de61ae084e8a7bbf10b67150a432e014b4e67793c3c614be802b57b02a36e81a5b8a31a68e3afe76a24b9": [
           "object.json"
         ]
       }
@@ -209,130 +41,22 @@
       "8b47eedc370b7d3bbc392944f9462860": [
         "v1/content/datacite.json"
       ],
-      "fb5717d064f27e815f524045a64a7f58": [
+      "7fea1a1fe989b00d064876b4817f88dd": [
         "v1/content/members.json"
       ],
       "1fd2176be67566105f8b48115a1bd123": [
         "v1/content/object.json"
-      ],
-      "4bf95d7aa3627f18460a23fe1f5f340b": [
-        "v2/content/datacite.json"
-      ],
-      "33cf9d7e2b302d27f96d699d126a2db3": [
-        "v2/content/members.json"
-      ],
-      "60f919b95bd41866ef117c1a7b52ff29": [
-        "v2/content/object.json"
-      ],
-      "ace6a85e34c62c564a97bb33c1e1d447": [
-        "v3/content/datacite.json"
-      ],
-      "7e0c40d0453c1660728f2b1550a68b42": [
-        "v3/content/members.json"
-      ],
-      "860eabc84ea87a227b9a09eb3e6961b2": [
-        "v3/content/object.json"
-      ],
-      "6d73e376aa538c3def6c3656ae591070": [
-        "v4/content/datacite.json"
-      ],
-      "2c7d3af878769be5e57583a309bc727a": [
-        "v4/content/members.json"
-      ],
-      "5d07831a3c6b5194839b0501e9af525b": [
-        "v4/content/object.json"
-      ],
-      "caba8393f16eafd61ea1c2cc0c145bbb": [
-        "v5/content/datacite.json"
-      ],
-      "b9739e27fbd19f4a49d47b99df7b26e6": [
-        "v5/content/members.json"
-      ],
-      "bbc720aeb4f8a3ebbcfaa6a2377ff217": [
-        "v5/content/object.json"
-      ],
-      "98cfc3ed0d2119ee34aeefce2669ba4f": [
-        "v6/content/datacite.json"
-      ],
-      "b593e54ac7ceeb12f8f9110bc7839769": [
-        "v6/content/members.json"
-      ],
-      "812f7a6a70f71d6c3b9f3819b4d5148b": [
-        "v6/content/object.json"
-      ],
-      "3ed2dddf7ffc4f919ea0dda7b81bf150": [
-        "v7/content/datacite.json"
-      ],
-      "1dc410ad93ff3bd93dba1a3e69e7f98b": [
-        "v7/content/members.json"
-      ],
-      "5fd4edf3328aee5838e0a3939c3c5012": [
-        "v7/content/object.json"
       ]
     },
     "sha256": {
       "0bbc4be1433952f591cb78e7c77574d1c16604014e247b632ed573ceed0bec88": [
         "v1/content/datacite.json"
       ],
-      "2b1ac3729e8a8acf761f7306b6e42c37536dfe1994486ae873a775597f76c01a": [
+      "f241d226f142646b79e4d1c846d3c4ae90db7bd3c7f24bbf5caa55b6512b165a": [
         "v1/content/members.json"
       ],
       "275516902e7e2efc07a628b5ed7fc451165b2419e9c7c7a680d944fbe7976a8b": [
         "v1/content/object.json"
-      ],
-      "c7f2249f368b5d805fd90d1c22db5b4a4a39880f728278609165b31a81784cf8": [
-        "v2/content/datacite.json"
-      ],
-      "4443c289dc3efa091fc5559bf771a977a842f6cc9609754efbcf230badf9d507": [
-        "v2/content/members.json"
-      ],
-      "80d7cb6650ec83c7d84405588dbeabf4116337c1efcff238671ef3745d382d7a": [
-        "v2/content/object.json"
-      ],
-      "58b63b19ade867161cbaea2a360089c7c3dc44dd30e55835911df3a6aa7a5ca0": [
-        "v3/content/datacite.json"
-      ],
-      "aa7164e9021cae0d731962ed5095ea9b8aaa6c4ee81586f70bd763cc50e13af9": [
-        "v3/content/members.json"
-      ],
-      "6adcb01d715fc423f5197b431b47b31d55b5df6ee801a393b51a65f503965181": [
-        "v3/content/object.json"
-      ],
-      "fda7e0ffae3dcf6892b06165bdde5f5e39d318363efc7cef7b086045809fe3a3": [
-        "v4/content/datacite.json"
-      ],
-      "2d507f85ad7326ba4600d7049ae292e77af3317d0bf33e28eac181b71114396c": [
-        "v4/content/members.json"
-      ],
-      "d04e11238a9a493c1dea7357f74c59f10ff013fd7425bb894704c9dcc93de6c3": [
-        "v4/content/object.json"
-      ],
-      "e25fc57afbda12c51b7022ca3724d130761a23d038812e1caf3e294ed0ba6314": [
-        "v5/content/datacite.json"
-      ],
-      "59f2e5cc63b0048c55e1eb479c364ba31208eb4b015e5f71f4ddaffdf777c05d": [
-        "v5/content/members.json"
-      ],
-      "20fb0b84d39c14362def15efe9e981aa267179625efef5007a6c627b88d2e2ad": [
-        "v5/content/object.json"
-      ],
-      "79f1a31b41414b21f102a90bf0fd74fe29f41d26b8710d14f86eb7a6c8b7cd07": [
-        "v6/content/datacite.json"
-      ],
-      "78953c3ba739ae1aa986b15fde74013155c8020fe554afb84e0ede0455add70f": [
-        "v6/content/members.json"
-      ],
-      "ea04320dc2a94d1d1ce99d91f41abb1425b873bffa7c8a5f8e9f0139b81fd786": [
-        "v6/content/object.json"
-      ],
-      "51c46dfc212fedcfb5b5908d1d2a88ef5c7b151c84c3b6d992e68602ed39ee14": [
-        "v7/content/datacite.json"
-      ],
-      "8846dee48a85add4fae36a764f55b4a5d144652a614421368b6630612c605589": [
-        "v7/content/members.json"
-      ],
-      "2eaa0456c70f27b92b3c40cd50564cd2fa2846e316c68264900644e76ca8cf24": [
-        "v7/content/object.json"
       ]
     }
   }

@@ -5,7 +5,7 @@
   "head": "v1",
   "contentDirectory": "content",
   "manifest": {
-    "d76b63de421d94f92f0f306bff30bef5904bc0435f3069806184423419e8a3949fbff3ea4a87f15af6e4116276e7efe82429a5f358c9b7f98680dc2e813f157d": [
+    "bde069b1422538e5a97f858a4d04d3e9b5838863460a1dea8a0c000f69ca94d2d924ca9762f534300ec21b973bcf5e5e8b2420bb2c5fdb5c863d3068401ea387": [
       "v1/content/datacite.json"
     ],
     "2304510140e2c3ed65e387a7c887586442c22bdb556c4132237437ab1f74b79da514ee8b605d6976aa2ab2755eda25a29e3e8eeddd1cec3af51de9587a3e5b15": [
@@ -17,14 +17,14 @@
   },
   "versions": {
     "v1": {
-      "created": "2026-11-16T00:16:30Z",
+      "created": "2026-11-16T00:55:00Z",
       "message": "Imported from arXiv: 2212.05584v1 of 2022-12-11",
       "user": {
         "name": "Massimiliano Gubinelli",
         "address": "https://opensheaf.github.io/my-test/"
       },
       "state": {
-        "d76b63de421d94f92f0f306bff30bef5904bc0435f3069806184423419e8a3949fbff3ea4a87f15af6e4116276e7efe82429a5f358c9b7f98680dc2e813f157d": [
+        "bde069b1422538e5a97f858a4d04d3e9b5838863460a1dea8a0c000f69ca94d2d924ca9762f534300ec21b973bcf5e5e8b2420bb2c5fdb5c863d3068401ea387": [
           "datacite.json"
         ],
         "2304510140e2c3ed65e387a7c887586442c22bdb556c4132237437ab1f74b79da514ee8b605d6976aa2ab2755eda25a29e3e8eeddd1cec3af51de9587a3e5b15": [
@@ -38,7 +38,7 @@
   },
   "fixity": {
     "md5": {
-      "99e1c8d3e5eda8b3b70c316c2e9b4acc": [
+      "09c542c1ec340f047dc28b48b975c05a": [
         "v1/content/datacite.json"
       ],
       "3e0e7aab19886df2af1ebd3eda69fee6": [
@@ -49,7 +49,7 @@
       ]
     },
     "sha256": {
-      "19da2452f08fa971d45c7679a88c5cbf5b47dffcfcf14a70e96c087f071201b0": [
+      "c7c3fba9cbfa6bf9d8aa1507fab8a90a0bbdaef561fac89f9b2ab4e102134c45": [
         "v1/content/datacite.json"
       ],
       "ec7962347807806c83b464ba54a58a59ae436f04e0c87722d8b0e95eedf32004": [
