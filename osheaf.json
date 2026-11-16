@@ -1,0 +1,25 @@
+{
+  "archiveId": "tag:opensheaf.github.io,2026:my-test",
+  "name": "A test archive",
+  "contact": "https://opensheaf.github.io/my-test/",
+  "baseUrl": "https://opensheaf.github.io/my-test/",
+  "profiles": [
+    "website"
+  ],
+  "mainCollection": "collection-main",
+  "curator": {
+    "name": "Gubinelli, Massimiliano",
+    "givenName": "Massimiliano",
+    "familyName": "Gubinelli",
+    "affiliation": "Oxford"
+  },
+  "depositor": {
+    "name": "Massimiliano Gubinelli",
+    "address": "https://opensheaf.github.io/my-test/"
+  },
+  "index": {
+    "html": {
+      "templates": "templates"
+    }
+  }
+}

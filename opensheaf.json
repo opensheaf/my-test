@@ -1,0 +1,22 @@
+{
+  "format": "opensheaf-archive/0.1",
+  "specification": "0.1",
+  "archiveId": "tag:opensheaf.github.io,2026:my-test",
+  "name": "A test archive",
+  "contact": "https://opensheaf.github.io/my-test/",
+  "storageRoot": "ocfl/",
+  "storageLayout": "0002-flat-direct-storage-layout",
+  "mainCollection": "collection-main",
+  "profiles": [
+    "website"
+  ],
+  "objects": [
+    {
+      "id": "collection-main",
+      "kind": "collection",
+      "head": "v1",
+      "inventorySha512": "0d4f04dcf400037e5d55c239818ec0d8619576150c82e1e739801ff9183ffba7806f1c63d0e5a8501070ebd468d052eb009b77a65ffdc841a317b4c678d0b288",
+      "status": "active"
+    }
+  ]
+}
