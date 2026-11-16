@@ -1,0 +1,17 @@
+{
+  "format": "opensheaf-object/0.1",
+  "specification": "0.1",
+  "kind": "document",
+  "archiveId": "tag:opensheaf.github.io,2026:my-test",
+  "objectId": "random-walks",
+  "documentVersion": 1,
+  "mainSource": "paper.tex",
+  "sourceFormat": "application/x-tex",
+  "renditions": [
+    {
+      "path": "paper.pdf",
+      "mediaType": "application/pdf"
+    }
+  ],
+  "status": "active"
+}

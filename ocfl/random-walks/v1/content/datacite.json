@@ -1,0 +1,81 @@
+{
+  "titles": [
+    {
+      "title": "Random walks on a fictitious lattice"
+    }
+  ],
+  "creators": [
+    {
+      "name": "Example, Ada",
+      "nameType": "Personal",
+      "familyName": "Example",
+      "givenName": "Ada",
+      "affiliation": [
+        {
+          "name": "University of Nowhere"
+        }
+      ]
+    },
+    {
+      "name": "Sample, Bo",
+      "nameType": "Personal",
+      "familyName": "Sample",
+      "givenName": "Bo",
+      "affiliation": [
+        {
+          "name": "Institute of Placeholders"
+        }
+      ]
+    }
+  ],
+  "publisher": {
+    "name": "A test archive"
+  },
+  "publicationYear": 2024,
+  "types": {
+    "resourceTypeGeneral": "Preprint"
+  },
+  "version": "1",
+  "url": "https://opensheaf.github.io/my-test/paper/random-walks/",
+  "dates": [
+    {
+      "date": "2024-03-01",
+      "dateType": "Issued"
+    },
+    {
+      "date": "2024-03-01",
+      "dateType": "Available"
+    }
+  ],
+  "language": "en",
+  "formats": [
+    "application/x-tex",
+    "application/pdf",
+    "application/x-bibtex"
+  ],
+  "rightsList": [
+    {
+      "rights": "Creative Commons Attribution 4.0 International",
+      "rightsUri": "https://creativecommons.org/licenses/by/4.0/",
+      "rightsIdentifier": "cc-by-4.0",
+      "rightsIdentifierScheme": "SPDX"
+    }
+  ],
+  "subjects": [
+    {
+      "subject": "random walks"
+    },
+    {
+      "subject": "recurrence"
+    },
+    {
+      "subject": "example"
+    }
+  ],
+  "descriptions": [
+    {
+      "description": "We study the simple random walk $X_n$ on $\\mathbb{Z}^2$ and prove that it returns to the origin infinitely often.\n\nThis paper is an example of an OpenSheaf deposit: its authors and results are invented.",
+      "descriptionType": "Abstract"
+    }
+  ]
+}
