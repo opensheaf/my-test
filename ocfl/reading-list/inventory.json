@@ -2,7 +2,7 @@
   "id": "reading-list",
   "type": "https://ocfl.io/1.1/spec/#inventory",
   "digestAlgorithm": "sha512",
-  "head": "v4",
+  "head": "v5",
   "contentDirectory": "content",
   "manifest": {
     "639e79284445caedfa3435d9106aaa7d53130ad020dda8b0646e6c0a518320dc6b505ceaa8286d3e79d73945c0e13a5445293e07b6268ea6c27d426ae5ff5332": [
@@ -40,6 +40,15 @@
     ],
     "62fddb0c3e069a9a6f4bb4ec9fb9653d3a41aed35a70baa519d193123df2019b85156ae62f091232dc3a5db088665a17007c5c7a347c4cebe90489d8349f4141": [
       "v4/content/object.json"
+    ],
+    "c9636affa6cabf833295a8370860f4c6add20e85dda58ff1bf445e6c2db421ac64c9ce1d7466b89a35006b92c639daf4deefb5c8c8c48d677bbacf192e34ea75": [
+      "v5/content/datacite.json"
+    ],
+    "c40d8c8cececbf3a56f442a919b16c9fa4cb6bcbabcd570621884a2635a9f14dbb695f4ff2b7c14d24b381e4da3eb10feb2f2decd423a3e064c4b933f582d3d2": [
+      "v5/content/members.json"
+    ],
+    "1f11a512c99a16352342b6c9ce1f140a8bebfc562960c37a579210f6cc3067af99415fcf1d56544b6a08947f9e70b01c390973022d99df0ec2b6dc52a8821c2b": [
+      "v5/content/object.json"
     ]
   },
   "versions": {
@@ -118,6 +127,25 @@
           "object.json"
         ]
       }
+    },
+    "v5": {
+      "created": "2026-11-16T00:13:35Z",
+      "message": "Add random-walks from https://opensheaf.github.io/my-test/ to reading-list (request 20261116-001304-daib): an example of this archive",
+      "user": {
+        "name": "Massimiliano Gubinelli",
+        "address": "https://opensheaf.github.io/my-test/"
+      },
+      "state": {
+        "c9636affa6cabf833295a8370860f4c6add20e85dda58ff1bf445e6c2db421ac64c9ce1d7466b89a35006b92c639daf4deefb5c8c8c48d677bbacf192e34ea75": [
+          "datacite.json"
+        ],
+        "c40d8c8cececbf3a56f442a919b16c9fa4cb6bcbabcd570621884a2635a9f14dbb695f4ff2b7c14d24b381e4da3eb10feb2f2decd423a3e064c4b933f582d3d2": [
+          "members.json"
+        ],
+        "1f11a512c99a16352342b6c9ce1f140a8bebfc562960c37a579210f6cc3067af99415fcf1d56544b6a08947f9e70b01c390973022d99df0ec2b6dc52a8821c2b": [
+          "object.json"
+        ]
+      }
     }
   },
   "fixity": {
@@ -157,6 +185,15 @@
       ],
       "9efc9f5ef0855e6f3b95178a254afd15": [
         "v4/content/object.json"
+      ],
+      "e5022cb78fd3f00e6b8b9b57e18f22c9": [
+        "v5/content/datacite.json"
+      ],
+      "f4eb6ea75839da694a24711a0cc26d59": [
+        "v5/content/members.json"
+      ],
+      "4335fd2a43dd14a07e6944e298e5ba15": [
+        "v5/content/object.json"
       ]
     },
     "sha256": {
@@ -195,6 +232,15 @@
       ],
       "d226a79b04137c46013d467822ec075d001c7264c214da715b0073ae012065a1": [
         "v4/content/object.json"
+      ],
+      "a8b1755110b093abfe4a32f27f1b87597e650fb9b1755279b67581bf04628f18": [
+        "v5/content/datacite.json"
+      ],
+      "b9a66122c3b79ec96f573d5da829a91d6559a16c3a403fb9f580e25f7b6e8a1b": [
+        "v5/content/members.json"
+      ],
+      "ea1d36ccbcd3d7b042353c279e01364536c6e80a67c09f27dc4cfa5dd30b811d": [
+        "v5/content/object.json"
       ]
     }
   }

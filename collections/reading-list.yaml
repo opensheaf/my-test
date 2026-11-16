@@ -18,3 +18,5 @@ members:
   id: phi43-variational
 - archive: https://mgubi.org/papers/
   id: fractional-phi42-mass-gap
+- archive: https://opensheaf.github.io/my-test/
+  id: random-walks
