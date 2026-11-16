@@ -14,3 +14,5 @@ members:
   id: paracontrolled-distributions
   revisions:
   - 5
+- archive: https://mgubi.org/papers/
+  id: phi43-variational

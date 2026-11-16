@@ -1,0 +1,52 @@
+{
+  "format": "opensheaf-collection/0.1",
+  "type": "selection",
+  "order": "manual",
+  "members": [
+    {
+      "kind": "document",
+      "archive": "tag:opensheaf.org,2026:mgubi",
+      "archiveUrl": "https://mgubi.org/papers/",
+      "id": "paracontrolled-distributions",
+      "revisions": [
+        {
+          "documentVersion": 5,
+          "version": "v5",
+          "inventorySha512": "4ec8cfcb5fec48405d25a78ff1d70ba7327f364d9dfc59b3feda0f31292450b6bdc247cc6822a261e419bb6a15f6f04e3c429627b0d39508c025f83e3e78a679"
+        }
+      ],
+      "cite": {
+        "title": "Paracontrolled distributions and singular PDEs",
+        "creators": [
+          "Massimiliano Gubinelli",
+          "Peter Imkeller",
+          "Nicolas Perkowski"
+        ],
+        "year": 2012,
+        "issued": "2012-10-09"
+      }
+    },
+    {
+      "kind": "document",
+      "archive": "tag:opensheaf.org,2026:mgubi",
+      "archiveUrl": "https://mgubi.org/papers/",
+      "id": "phi43-variational",
+      "revisions": [
+        {
+          "documentVersion": 2,
+          "version": "v2",
+          "inventorySha512": "f214a3cc3ed9fa20e6fc939743896a22b46eb14d1714b49ec729edab1942bde8144156c4da2d911ff1a9b33df8718d3b1875f4729a6963b6a8a382dedc6cfcc0"
+        }
+      ],
+      "cite": {
+        "title": "A variational method for $\\Phi^4_3$",
+        "creators": [
+          "N. Barashkov",
+          "M. Gubinelli"
+        ],
+        "year": 2018,
+        "issued": "2018-05-28"
+      }
+    }
+  ]
+}

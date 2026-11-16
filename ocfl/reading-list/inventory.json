@@ -2,7 +2,7 @@
   "id": "reading-list",
   "type": "https://ocfl.io/1.1/spec/#inventory",
   "digestAlgorithm": "sha512",
-  "head": "v2",
+  "head": "v3",
   "contentDirectory": "content",
   "manifest": {
     "639e79284445caedfa3435d9106aaa7d53130ad020dda8b0646e6c0a518320dc6b505ceaa8286d3e79d73945c0e13a5445293e07b6268ea6c27d426ae5ff5332": [
@@ -22,6 +22,15 @@
     ],
     "67301cc9b95382ccae035d624bf9265226b3352eb75677f58da794fdbcf05887aa62e2f3e7d7779a3ba5af524e605af4497671cf25f72931555cfbbd16823336": [
       "v2/content/object.json"
+    ],
+    "4f6e602b8850015d36ce0807bf019cd2b647741390b57305872647b7fa30caae5070553e0e78c5927808e72a1ee19d79b9d02f016b5fa47a8db4f5a53609fe24": [
+      "v3/content/datacite.json"
+    ],
+    "8218d89d118f699d9309b606a53757fc49628045a8e9c51174b1aa6f6d9913278225377365b0b5aa1f215f94c87df3fc34b79a7550898a96d56b794ffa9d4787": [
+      "v3/content/members.json"
+    ],
+    "b02adedcabf5337662c0083ac8869fc3ba0073f9e39a545c5818081ee3ffeec7b4c34ce841478754e37a4f984b42a9a7bce1413411b78a76cfc6f0580134efd2": [
+      "v3/content/object.json"
     ]
   },
   "versions": {
@@ -62,6 +71,25 @@
           "object.json"
         ]
       }
+    },
+    "v3": {
+      "created": "2026-11-16T00:12:30Z",
+      "message": "Add phi43-variational from https://mgubi.org/papers/ to reading-list (request 20261116-001202-tsjm)",
+      "user": {
+        "name": "Massimiliano Gubinelli",
+        "address": "https://opensheaf.github.io/my-test/"
+      },
+      "state": {
+        "4f6e602b8850015d36ce0807bf019cd2b647741390b57305872647b7fa30caae5070553e0e78c5927808e72a1ee19d79b9d02f016b5fa47a8db4f5a53609fe24": [
+          "datacite.json"
+        ],
+        "8218d89d118f699d9309b606a53757fc49628045a8e9c51174b1aa6f6d9913278225377365b0b5aa1f215f94c87df3fc34b79a7550898a96d56b794ffa9d4787": [
+          "members.json"
+        ],
+        "b02adedcabf5337662c0083ac8869fc3ba0073f9e39a545c5818081ee3ffeec7b4c34ce841478754e37a4f984b42a9a7bce1413411b78a76cfc6f0580134efd2": [
+          "object.json"
+        ]
+      }
     }
   },
   "fixity": {
@@ -83,6 +111,15 @@
       ],
       "68102382e409c69ae7801842f4bc5b5c": [
         "v2/content/object.json"
+      ],
+      "5eb113bf027c779dd7809d05cef64b22": [
+        "v3/content/datacite.json"
+      ],
+      "457cb14d1355e637a9751ce3bda79f54": [
+        "v3/content/members.json"
+      ],
+      "501cfffdd91c871c7283a444cb9ab888": [
+        "v3/content/object.json"
       ]
     },
     "sha256": {
@@ -103,6 +140,15 @@
       ],
       "8c8c7a9175ac86f7f533b853da5f9d677e836d1a338da080975b77aba80fae50": [
         "v2/content/object.json"
+      ],
+      "4b909803926b38950bae44092eab122361aa480dbc783b3951a3709903db5ca0": [
+        "v3/content/datacite.json"
+      ],
+      "9c3991c2d191a1275384bd97e7431c97153cff772a575b19ae3edf90d0e05fcf": [
+        "v3/content/members.json"
+      ],
+      "ca6284f736c1c577cdb6b1eae5913016755c0e4c04acc84246ea180710bbffca": [
+        "v3/content/object.json"
       ]
     }
   }
