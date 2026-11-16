@@ -1,0 +1,78 @@
+{
+  "format": "opensheaf-collection/0.1",
+  "type": "catalogue",
+  "order": "issued-desc",
+  "members": [
+    {
+      "kind": "document",
+      "archive": "tag:opensheaf.github.io,2026:my-test",
+      "archiveUrl": "https://opensheaf.github.io/my-test/",
+      "id": "random-walks",
+      "version": "v3",
+      "inventorySha512": "4f26ac9e78a594e61085021f8d784ab08c00eda6de684c242e770d978872d0d50ce22f6d0c3a4a4620a0198438e2e69df5843e5f39d246bdca6f5ef69a4a1098",
+      "follow": "latest",
+      "cite": {
+        "title": "Random walks on a fictitious lattice",
+        "creators": [
+          "Ada Example",
+          "Bo Sample"
+        ],
+        "year": 2024,
+        "issued": "2024-03-01"
+      }
+    },
+    {
+      "kind": "document",
+      "archive": "tag:opensheaf.github.io,2026:my-test",
+      "archiveUrl": "https://opensheaf.github.io/my-test/",
+      "id": "heat-notes",
+      "version": "v1",
+      "inventorySha512": "86ffd9b1ff6ae482a11808d661b10386394ea2fa3d719f0eb67740f3171859effb968d6132532a8a8691c51e5b0e4b2b7bb99f13b5d92a676259c506987f09bc",
+      "follow": "latest",
+      "cite": {
+        "title": "Notes on the heat equation",
+        "creators": [
+          "Cy Placeholder"
+        ],
+        "year": 2023,
+        "issued": "2023-12-01"
+      }
+    },
+    {
+      "kind": "document",
+      "archive": "tag:opensheaf.github.io,2026:my-test",
+      "archiveUrl": "https://opensheaf.github.io/my-test/",
+      "id": "ibp-exponential",
+      "version": "v1",
+      "inventorySha512": "adb150ab531fc30870f1975601327d974b032e16acbba26572c0ea0f88da82c9ffc2bbb0116765298978e5293bdf2e490a4137e050dd53a6e6810f81cbab801f",
+      "follow": "latest",
+      "cite": {
+        "title": "A singular integration by parts formula for the exponential Euclidean QFT on the plane",
+        "creators": [
+          "Francesco C. De Vecchi",
+          "Massimiliano Gubinelli",
+          "Mattia Turra"
+        ],
+        "year": 2022,
+        "issued": "2022-12-11"
+      }
+    },
+    {
+      "kind": "document",
+      "archive": "tag:opensheaf.github.io,2026:my-test",
+      "archiveUrl": "https://opensheaf.github.io/my-test/",
+      "id": "lost-sources",
+      "version": "v1",
+      "inventorySha512": "d6d677e4a7599a066fa607a90b5bcb6deaf866ad6e0f512918b92cd1007701a246707a779ebe102bd5456daeb661efa13bffc8d543605d270d38e378edba2752",
+      "follow": "latest",
+      "cite": {
+        "title": "An old conference paper",
+        "creators": [
+          "Ada Example"
+        ],
+        "year": 1998,
+        "issued": "1998-06-15"
+      }
+    }
+  ]
+}

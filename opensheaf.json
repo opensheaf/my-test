@@ -14,8 +14,8 @@
     {
       "id": "collection-main",
       "kind": "collection",
-      "head": "v6",
-      "inventorySha512": "a02cd71ae2283a1a7ec2130107818547c08afa7dcd68720f47ea63b0a00a7fcb88bd0e93cd447c0c5c382d2005237012f6294b12bb52f78798d50c9b1a8cc8c2",
+      "head": "v7",
+      "inventorySha512": "4acd8d241e507319ce33a0e703c2abdffbd71d9081026f800ecff551720bc6fa94308a12e03e56bd98698ffc087d20ad656833bdac5ab4067b424049a5cae079",
       "status": "active"
     },
     {
@@ -23,6 +23,13 @@
       "kind": "document",
       "head": "v1",
       "inventorySha512": "86ffd9b1ff6ae482a11808d661b10386394ea2fa3d719f0eb67740f3171859effb968d6132532a8a8691c51e5b0e4b2b7bb99f13b5d92a676259c506987f09bc",
+      "status": "active"
+    },
+    {
+      "id": "ibp-exponential",
+      "kind": "document",
+      "head": "v1",
+      "inventorySha512": "adb150ab531fc30870f1975601327d974b032e16acbba26572c0ea0f88da82c9ffc2bbb0116765298978e5293bdf2e490a4137e050dd53a6e6810f81cbab801f",
       "status": "active"
     },
     {
@@ -42,8 +49,8 @@
     {
       "id": "reading-list",
       "kind": "collection",
-      "head": "v8",
-      "inventorySha512": "f635d0c19180346f867a43794de620735e9abb5454df6e2d91ba9280d641c9035466bb6904f0df9c9edc231c03b2f89009c6ad22d0e7957a52e3669bfdb81cb2",
+      "head": "v9",
+      "inventorySha512": "02887d457a79a44d7b3cfc6f7fd1c366b7e6ab77f64a5268aa7d5876a95dfbb1c033e061d807ce2daf7e9441d96ff88e0c7e43d220db73e55c02e32613d7bf87",
       "status": "active"
     },
     {

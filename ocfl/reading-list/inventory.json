@@ -2,7 +2,7 @@
   "id": "reading-list",
   "type": "https://ocfl.io/1.1/spec/#inventory",
   "digestAlgorithm": "sha512",
-  "head": "v8",
+  "head": "v9",
   "contentDirectory": "content",
   "manifest": {
     "639e79284445caedfa3435d9106aaa7d53130ad020dda8b0646e6c0a518320dc6b505ceaa8286d3e79d73945c0e13a5445293e07b6268ea6c27d426ae5ff5332": [
@@ -76,6 +76,15 @@
     ],
     "b3d3b93b9ad4da5f3816b52bb48fa2a2df080a239dd21ed36ef95c6218462921955282753edbac0c1a649303ee0037202c7dc7942daf73ccb2d5d784d6c089c6": [
       "v8/content/object.json"
+    ],
+    "98d68439067138b1f2c0894afd46cf561c53405528ecf48cd306083fd1d2b3cc47f16ab73bb1b1f053e87ee179b45248689bb6d0fdbdb4e15b08d36a691a7845": [
+      "v9/content/datacite.json"
+    ],
+    "178bc6a6febc647987af10472a0dd57671df8f61e6dcb6b6dabd9cc740a4684c5cc5be44e014d661317661cb3fe7d6e9651c284523a26d3104da53ce536daeb1": [
+      "v9/content/members.json"
+    ],
+    "907fbbdb74fa690e9fb72a8d41d5ce66e528a0b673097af836022c16021b7a93ba33a77870e466b0ffcae18d8c3e345d742a1c641a7a25fc8677a29525891fdf": [
+      "v9/content/object.json"
     ]
   },
   "versions": {
@@ -230,6 +239,25 @@
           "object.json"
         ]
       }
+    },
+    "v9": {
+      "created": "2026-11-16T00:16:32Z",
+      "message": "Import ibp-exponential from arXiv:2212.05584, all its versions in the collection `reading-list` (request 20261116-001552-gdqa)",
+      "user": {
+        "name": "Massimiliano Gubinelli",
+        "address": "https://opensheaf.github.io/my-test/"
+      },
+      "state": {
+        "98d68439067138b1f2c0894afd46cf561c53405528ecf48cd306083fd1d2b3cc47f16ab73bb1b1f053e87ee179b45248689bb6d0fdbdb4e15b08d36a691a7845": [
+          "datacite.json"
+        ],
+        "178bc6a6febc647987af10472a0dd57671df8f61e6dcb6b6dabd9cc740a4684c5cc5be44e014d661317661cb3fe7d6e9651c284523a26d3104da53ce536daeb1": [
+          "members.json"
+        ],
+        "907fbbdb74fa690e9fb72a8d41d5ce66e528a0b673097af836022c16021b7a93ba33a77870e466b0ffcae18d8c3e345d742a1c641a7a25fc8677a29525891fdf": [
+          "object.json"
+        ]
+      }
     }
   },
   "fixity": {
@@ -305,6 +333,15 @@
       ],
       "153292369c8872ea404c7c00e9a8668e": [
         "v8/content/object.json"
+      ],
+      "4f915a15ce3c46ceec4179b7ae7c44ef": [
+        "v9/content/datacite.json"
+      ],
+      "63f6748c5097d4e23b58d1b694a23f28": [
+        "v9/content/members.json"
+      ],
+      "3745c793bec8f40f4585c932534c65ed": [
+        "v9/content/object.json"
       ]
     },
     "sha256": {
@@ -379,6 +416,15 @@
       ],
       "379a2163201dfb17e9fb1a9e1140acb82011910eef1e3bfab7f71d6218dfcda8": [
         "v8/content/object.json"
+      ],
+      "1ed66b93fc89bd8b0ff1f23de9afa7c0d771a8064684aa6fee71d7e0d8ce1f74": [
+        "v9/content/datacite.json"
+      ],
+      "9ec6f7f4a2e7fe9c254730bd41cf278e698cd60407db58651a6c342f6bf888ee": [
+        "v9/content/members.json"
+      ],
+      "e3aeab07fbe1fa864dea8a2a5cc64b7828c3f8c698b0758ac1fa7305192e25c9": [
+        "v9/content/object.json"
       ]
     }
   }

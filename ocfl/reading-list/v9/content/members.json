@@ -1,0 +1,150 @@
+{
+  "format": "opensheaf-collection/0.1",
+  "type": "selection",
+  "order": "manual",
+  "members": [
+    {
+      "kind": "document",
+      "archive": "tag:opensheaf.org,2026:mgubi",
+      "archiveUrl": "https://mgubi.org/papers/",
+      "id": "paracontrolled-distributions",
+      "revisions": [
+        {
+          "documentVersion": 5,
+          "version": "v5",
+          "inventorySha512": "4ec8cfcb5fec48405d25a78ff1d70ba7327f364d9dfc59b3feda0f31292450b6bdc247cc6822a261e419bb6a15f6f04e3c429627b0d39508c025f83e3e78a679"
+        }
+      ],
+      "cite": {
+        "title": "Paracontrolled distributions and singular PDEs",
+        "creators": [
+          "Massimiliano Gubinelli",
+          "Peter Imkeller",
+          "Nicolas Perkowski"
+        ],
+        "year": 2012,
+        "issued": "2012-10-09"
+      }
+    },
+    {
+      "kind": "document",
+      "archive": "tag:opensheaf.org,2026:mgubi",
+      "archiveUrl": "https://mgubi.org/papers/",
+      "id": "phi43-variational",
+      "revisions": [
+        {
+          "documentVersion": 2,
+          "version": "v2",
+          "inventorySha512": "f214a3cc3ed9fa20e6fc939743896a22b46eb14d1714b49ec729edab1942bde8144156c4da2d911ff1a9b33df8718d3b1875f4729a6963b6a8a382dedc6cfcc0"
+        }
+      ],
+      "cite": {
+        "title": "A variational method for $\\Phi^4_3$",
+        "creators": [
+          "N. Barashkov",
+          "M. Gubinelli"
+        ],
+        "year": 2018,
+        "issued": "2018-05-28"
+      }
+    },
+    {
+      "kind": "document",
+      "archive": "tag:opensheaf.org,2026:mgubi",
+      "archiveUrl": "https://mgubi.org/papers/",
+      "id": "fractional-phi42-mass-gap",
+      "revisions": [
+        {
+          "documentVersion": 1,
+          "version": "v4",
+          "inventorySha512": "b9879f5468b83168f6846cbfdcfd5b49b5e59b509ec56367711bdb4274d149bd9a5d1d64385d0e8d6573e2fe0181703b7d6f8f57449c9ebb6ca77ccd7760fbc7"
+        }
+      ],
+      "cite": {
+        "title": "Mass gap for the fractional $\\Phi^4_2$ model",
+        "creators": [
+          "Paweł Duch",
+          "Massimiliano Gubinelli"
+        ],
+        "year": 2026,
+        "issued": "2026-11-12"
+      }
+    },
+    {
+      "kind": "document",
+      "archive": "tag:opensheaf.github.io,2026:my-test",
+      "archiveUrl": "https://opensheaf.github.io/my-test/",
+      "id": "random-walks",
+      "revisions": [
+        {
+          "documentVersion": 2,
+          "version": "v3",
+          "inventorySha512": "4f26ac9e78a594e61085021f8d784ab08c00eda6de684c242e770d978872d0d50ce22f6d0c3a4a4620a0198438e2e69df5843e5f39d246bdca6f5ef69a4a1098"
+        }
+      ],
+      "cite": {
+        "title": "Random walks on a fictitious lattice",
+        "creators": [
+          "Ada Example",
+          "Bo Sample"
+        ],
+        "year": 2024,
+        "issued": "2024-03-01"
+      }
+    },
+    {
+      "kind": "collection",
+      "archive": "tag:opensheaf.github.io,2026:my-test",
+      "archiveUrl": "https://opensheaf.github.io/my-test/",
+      "id": "seminar-autumn-2026",
+      "revisions": [
+        {
+          "documentVersion": 1,
+          "version": "v1",
+          "inventorySha512": "68e5c2b7a3fc2af6ce7a36469af52f776225a65b14e120b6fb69ce10a5ab6f705011a8f76983cb2abe40dd474b6de07d9141dd4e0e10e5930ede667de1db3072"
+        },
+        {
+          "documentVersion": 2,
+          "version": "v2",
+          "inventorySha512": "f604a6ac262023fb5cd1cdebd6992d10828d69e879b32e7d36b357c630a9c5eab330aaea78ec0e4233f2bd43c8ca82244d02cbe78bca2e01db5047685c9d6382"
+        },
+        {
+          "documentVersion": 3,
+          "version": "v3",
+          "inventorySha512": "84412b7a90897c3e1440976356349915c27f0d7fadf027c6db14be3eef456aec284258750d832ab6cec9517bc0509dac091559e762fab4ffd2f47dfc496aad78"
+        }
+      ],
+      "cite": {
+        "title": "Seminar, autumn 2026",
+        "creators": [
+          "Massimiliano Gubinelli"
+        ],
+        "year": 2026,
+        "issued": "2026-11-16"
+      }
+    },
+    {
+      "kind": "document",
+      "archive": "tag:opensheaf.github.io,2026:my-test",
+      "archiveUrl": "https://opensheaf.github.io/my-test/",
+      "id": "ibp-exponential",
+      "revisions": [
+        {
+          "documentVersion": 1,
+          "version": "v1",
+          "inventorySha512": "adb150ab531fc30870f1975601327d974b032e16acbba26572c0ea0f88da82c9ffc2bbb0116765298978e5293bdf2e490a4137e050dd53a6e6810f81cbab801f"
+        }
+      ],
+      "cite": {
+        "title": "A singular integration by parts formula for the exponential Euclidean QFT on the plane",
+        "creators": [
+          "Francesco C. De Vecchi",
+          "Massimiliano Gubinelli",
+          "Mattia Turra"
+        ],
+        "year": 2022,
+        "issued": "2022-12-11"
+      }
+    }
+  ]
+}
