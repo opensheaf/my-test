@@ -19,7 +19,8 @@
   },
   "index": {
     "html": {
-      "templates": "templates"
+      "templates": "templates",
+      "featured": "reading-list"
     }
   }
 }
