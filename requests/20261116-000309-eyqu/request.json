@@ -1,0 +1,11 @@
+{
+  "operation": "setup",
+  "fields": {
+    "Name": "A test archive",
+    "Purpose": "papers",
+    "Description": "My first archive",
+    "Curator": "Gubinelli, Massimiliano",
+    "Affiliation": "Oxford"
+  },
+  "files": {}
+}
