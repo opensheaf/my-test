@@ -2,7 +2,7 @@
   "id": "reading-list",
   "type": "https://ocfl.io/1.1/spec/#inventory",
   "digestAlgorithm": "sha512",
-  "head": "v3",
+  "head": "v4",
   "contentDirectory": "content",
   "manifest": {
     "639e79284445caedfa3435d9106aaa7d53130ad020dda8b0646e6c0a518320dc6b505ceaa8286d3e79d73945c0e13a5445293e07b6268ea6c27d426ae5ff5332": [
@@ -31,6 +31,15 @@
     ],
     "b02adedcabf5337662c0083ac8869fc3ba0073f9e39a545c5818081ee3ffeec7b4c34ce841478754e37a4f984b42a9a7bce1413411b78a76cfc6f0580134efd2": [
       "v3/content/object.json"
+    ],
+    "7a7ca902b30d0bced4b0d4037cbcdf6e8d1832a55161355d551b6621e436a6b78573efddb55ea2ea4d1820b3348a563c8a49a616027ef9d516b93fd1a48986b1": [
+      "v4/content/datacite.json"
+    ],
+    "543f969058a12fa9f9c9738ca72d7b02d7542a4e79192a8ca3ad9d68df75e83045ee3da0093d47ef6db391d5d38048fe7f73c802e5c859e9a0afa274e4e8646e": [
+      "v4/content/members.json"
+    ],
+    "62fddb0c3e069a9a6f4bb4ec9fb9653d3a41aed35a70baa519d193123df2019b85156ae62f091232dc3a5db088665a17007c5c7a347c4cebe90489d8349f4141": [
+      "v4/content/object.json"
     ]
   },
   "versions": {
@@ -90,6 +99,25 @@
           "object.json"
         ]
       }
+    },
+    "v4": {
+      "created": "2026-11-16T00:13:00Z",
+      "message": "Add fractional-phi42-mass-gap from https://mgubi.org/papers/ to reading-list (request 20261116-001236-xbbc)",
+      "user": {
+        "name": "Massimiliano Gubinelli",
+        "address": "https://opensheaf.github.io/my-test/"
+      },
+      "state": {
+        "7a7ca902b30d0bced4b0d4037cbcdf6e8d1832a55161355d551b6621e436a6b78573efddb55ea2ea4d1820b3348a563c8a49a616027ef9d516b93fd1a48986b1": [
+          "datacite.json"
+        ],
+        "543f969058a12fa9f9c9738ca72d7b02d7542a4e79192a8ca3ad9d68df75e83045ee3da0093d47ef6db391d5d38048fe7f73c802e5c859e9a0afa274e4e8646e": [
+          "members.json"
+        ],
+        "62fddb0c3e069a9a6f4bb4ec9fb9653d3a41aed35a70baa519d193123df2019b85156ae62f091232dc3a5db088665a17007c5c7a347c4cebe90489d8349f4141": [
+          "object.json"
+        ]
+      }
     }
   },
   "fixity": {
@@ -120,6 +148,15 @@
       ],
       "501cfffdd91c871c7283a444cb9ab888": [
         "v3/content/object.json"
+      ],
+      "29e8b112f7c112a82522ef1c4ee0ef4f": [
+        "v4/content/datacite.json"
+      ],
+      "6887155f5c3b11d70638d88c0250761e": [
+        "v4/content/members.json"
+      ],
+      "9efc9f5ef0855e6f3b95178a254afd15": [
+        "v4/content/object.json"
       ]
     },
     "sha256": {
@@ -149,6 +186,15 @@
       ],
       "ca6284f736c1c577cdb6b1eae5913016755c0e4c04acc84246ea180710bbffca": [
         "v3/content/object.json"
+      ],
+      "a9347c7a92ac99e9e11aa91925c2af3504c75ea6ae2b2cbab774e3a62b62e68f": [
+        "v4/content/datacite.json"
+      ],
+      "f19ad5317487f9c078ba1a1390a45e564632a44f3bbcb988251075f0d7750231": [
+        "v4/content/members.json"
+      ],
+      "d226a79b04137c46013d467822ec075d001c7264c214da715b0073ae012065a1": [
+        "v4/content/object.json"
       ]
     }
   }

@@ -1,9 +1,0 @@
-{
-  "operation": "add",
-  "fields": {
-    "In collection": "reading-list",
-    "Archive of the new member": "https://mgubi.org/papers/",
-    "Identifier of the new member": "fractional-phi42-mass-gap"
-  },
-  "files": {}
-}
