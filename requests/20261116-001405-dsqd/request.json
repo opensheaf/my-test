@@ -1,0 +1,9 @@
+{
+  "operation": "add",
+  "fields": {
+    "In collection": "seminar-autumn-2026",
+    "Archive of the new member": "https://opensheaf.github.io/my-test/",
+    "Identifier of the new member": "heat-notes"
+  },
+  "files": {}
+}
