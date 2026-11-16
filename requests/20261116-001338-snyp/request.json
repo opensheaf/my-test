@@ -1,0 +1,12 @@
+{
+  "operation": "new_collection",
+  "fields": {
+    "Identifier of the new collection": "seminar-autumn-2026",
+    "Title of the collection": "Seminar, autumn 2026",
+    "Kind": "catalogue",
+    "Description": "The papers discussed in the seminar.",
+    "Feature it on the home page": "No",
+    "In collection": "reading-list"
+  },
+  "files": {}
+}
