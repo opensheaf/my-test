@@ -1,0 +1,25 @@
+{
+  "format": "opensheaf-collection/0.1",
+  "type": "catalogue",
+  "order": "issued-desc",
+  "members": [
+    {
+      "kind": "document",
+      "archive": "tag:opensheaf.github.io,2026:my-test",
+      "archiveUrl": "https://opensheaf.github.io/my-test/",
+      "id": "random-walks",
+      "version": "v2",
+      "inventorySha512": "9538f97bad29c99eba96d10ea5e290b14c10a2e6611fa200ce5eac38877e9a2a6c9cb3c5deb7988736b076fd3afa30a3a7421015cf40d4e794403855346bad1b",
+      "follow": "latest",
+      "cite": {
+        "title": "Random walks on a fictitious lattice",
+        "creators": [
+          "Ada Example",
+          "Bo Sample"
+        ],
+        "year": 2024,
+        "issued": "2024-03-01"
+      }
+    }
+  ]
+}

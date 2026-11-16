@@ -1,0 +1,30 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,graphicx}
+\newtheorem{theorem}{Theorem}
+\newcommand{\Z}{\mathbb{Z}}
+\title{Random walks on a fictitious lattice}
+\author{Ada Example\\ University of Nowhere \and Bo Sample\\ Institute of Placeholders}
+\date{Version 2, 15 September 2024}
+\begin{document}
+\maketitle
+\begin{abstract}
+We study the simple random walk $X_n$ on $\Z^2$ and prove that it returns to
+the origin infinitely often. This paper is an \emph{example} of an OpenSheaf
+deposit: its authors and results are invented.
+\end{abstract}
+\section{Introduction}
+Let $(X_n)_{n\ge 0}$ be the simple random walk on $\Z^2$ started at $0$,
+as in Figure~\ref{fig:walk}; see \cite{Polya,Sample} for imaginary background.
+\begin{figure}[h]\centering\includegraphics[width=0.45\textwidth]{figures/walk.pdf}
+\caption{A path of the walk.}\label{fig:walk}\end{figure}
+\begin{theorem}\label{thm:main}
+$\mathbb{P}(X_n = 0 \text{ for infinitely many } n) = 1.$
+\end{theorem}
+\begin{proof}
+Since $\mathbb{P}(X_{2n}=0)\sim \frac{1}{\pi n}$, the expected number of
+returns $\sum_n \mathbb{P}(X_{2n}=0)$ diverges, and the walk is recurrent.
+\end{proof}
+\section{Remarks}The constant $\frac{1}{\pi n}$ follows from Stirling's formula. We thank an imaginary referee for this remark.
+\bibliographystyle{plain}
+\bibliography{refs}
+\end{document}
