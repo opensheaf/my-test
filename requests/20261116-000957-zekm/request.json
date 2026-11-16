@@ -1,0 +1,17 @@
+{
+  "operation": "deposit",
+  "fields": {
+    "Identifier": "lost-sources",
+    "Title": "An old conference paper",
+    "Authors": "Example, Ada|University of Nowhere",
+    "Abstract": "An invented paper of 1998 whose sources were lost; only its PDF remains.",
+    "Licence": "All rights reserved",
+    "If there are no sources, why": "the sources of this paper were lost",
+    "Date this version became public": "1998-06-15"
+  },
+  "files": {
+    "PDF of this version": [
+      "paper.pdf"
+    ]
+  }
+}
