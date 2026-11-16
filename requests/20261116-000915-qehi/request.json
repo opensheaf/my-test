@@ -1,0 +1,20 @@
+{
+  "operation": "deposit",
+  "fields": {
+    "Identifier": "heat-notes",
+    "Title": "Notes on the heat equation",
+    "Authors": "Placeholder, Cy|University of Nowhere",
+    "Abstract": "Invented lecture notes on the heat equation $\\partial_t u = \\Delta u$ on $\\mathbb{R}^d$: the heat kernel and the maximum principle.",
+    "Keywords": "heat equation, lecture notes, example",
+    "Licence": "CC0 1.0 (cc0-1.0)",
+    "Date this version became public": "2023-12-01"
+  },
+  "files": {
+    "PDF of this version": [
+      "notes.pdf"
+    ],
+    "Sources": [
+      "notes.md"
+    ]
+  }
+}
