@@ -1,0 +1,8 @@
+# The settings of your archive, for `osheaf init . --from archive.yaml`.
+# Edit them, then run the command once; it writes osheaf.json.
+archive-id: tag:example.org,2026:papers   # names the archive forever (a tag URI: your domain or e-mail, the year, a name)
+name: Papers of Jane Doe
+base-url: https://janedoe.github.io/papers/   # where the site is served
+curator: Doe, Jane                         # "Family, Given"
+affiliation: Example University
+contact: https://example.org/~jane         # a page or mailto: address

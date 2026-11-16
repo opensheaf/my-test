@@ -1,0 +1,145 @@
+# Set the archive up from the browser (Actions tab, "Set up the archive",
+# "Run workflow"): runs osheaf init with the answers of the form and, for a
+# repository meant for a collection (a reading list, a journal issue),
+# creates that collection and features it on the home page; commits,
+# creates the labels of the issue forms, and says how to publish the site.
+# Run once; afterwards, use the issue forms (Issues, New issue).
+name: Set up the archive
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: The name, e.g. "Papers of Jane Doe", or "A reading list on stochastic quantisation"
+        required: true
+      purpose:
+        description: "What it is mainly for: papers (yours, or a group's); a selection (a reading list, a journal issue: you vet particular versions); a catalogue (papers followed whatever their authors add)"
+        type: choice
+        options: [papers, selection, catalogue]
+        default: papers
+      description:
+        description: For a selection or a catalogue, a sentence about it (optional)
+        required: false
+      curator:
+        description: Your name, as "Family, Given"
+        required: true
+      affiliation:
+        description: Your affiliation (optional)
+        required: false
+      contact:
+        description: A web page or mailto:address where you can be reached (optional)
+        required: false
+      archive_id:
+        description: The archive's permanent identifier, a tag URI (empty for tag:OWNER.github.io,YEAR:REPOSITORY)
+        required: false
+      base_url:
+        description: Where the site will be served (empty for https://OWNER.github.io/REPOSITORY/; if your GitHub Pages use your own domain, give it, e.g. https://example.org/REPOSITORY/)
+        required: false
+permissions:
+  contents: write
+  issues: write
+  pages: write
+concurrency:
+  group: archive
+  cancel-in-progress: false
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      NAME: ${{ inputs.name }}
+      PURPOSE: ${{ inputs.purpose }}
+      DESCRIPTION: ${{ inputs.description }}
+      CURATOR: ${{ inputs.curator }}
+      AFFILIATION: ${{ inputs.affiliation }}
+      CONTACT: ${{ inputs.contact }}
+      ARCHIVE_ID: ${{ inputs.archive_id }}
+      BASE_URL: ${{ inputs.base_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.13"}
+      - run: pip install "opensheaf[validate] @ git+https://github.com/opensheaf/opensheaf-py"
+      - name: osheaf init
+        run: |
+          if [ -f osheaf.json ]; then
+            echo "This archive is already set up (osheaf.json exists): nothing to do." | tee -a "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+          owner=$(echo "${GITHUB_REPOSITORY%%/*}" | tr '[:upper:]' '[:lower:]')
+          repo="${GITHUB_REPOSITORY#*/}"
+          if [ -z "$BASE_URL" ]; then
+            if [ "$(echo "$repo" | tr '[:upper:]' '[:lower:]')" = "$owner.github.io" ]; then
+              BASE_URL="https://$owner.github.io/"
+            else
+              BASE_URL="https://$owner.github.io/$repo/"
+            fi
+          fi
+          case "$BASE_URL" in */) ;; *) BASE_URL="$BASE_URL/" ;; esac
+          if [ -z "$ARCHIVE_ID" ]; then
+            ARCHIVE_ID="tag:$owner.github.io,$(date -u +%Y):$(echo "$repo" | tr '[:upper:]' '[:lower:]')"
+          fi
+          args=(init . --archive-id "$ARCHIVE_ID" --name "$NAME" --base-url "$BASE_URL" --curator "$CURATOR")
+          [ -n "$AFFILIATION" ] && args+=(--affiliation "$AFFILIATION")
+          [ -n "$CONTACT" ] && args+=(--contact "$CONTACT")
+          osheaf "${args[@]}"
+          if [ "$PURPOSE" != papers ]; then
+            # the collection the repository is for, featured on the home page
+            id=$(python3 - <<'PY'
+          import json, os, re, yaml
+          from pathlib import Path
+          name = os.environ["NAME"]
+          ident = re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")[:32].strip("-") or "collection"
+          data = {"title": name}
+          if os.environ.get("DESCRIPTION"):
+              data["description"] = os.environ["DESCRIPTION"]
+          data.update({"type": os.environ["PURPOSE"], "order": "manual", "members": []})
+          Path("collections").mkdir(exist_ok=True)
+          header = ("# The members of a collection of this archive, in order, for\n"
+                    "# `osheaf collection sync ID --from collections/ID.yaml`: kept by the issue\n"
+                    "# forms of this repository (Issues, New issue) or by hand (see the README).\n")
+          Path(f"collections/{ident}.yaml").write_text(header + yaml.safe_dump(data, sort_keys=False, allow_unicode=True), encoding="utf-8")
+          s = json.loads(Path("osheaf.json").read_text(encoding="utf-8"))
+          s.setdefault("index", {}).setdefault("html", {"templates": "templates"})["featured"] = ident
+          Path("osheaf.json").write_text(json.dumps(s, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+          Path(os.environ["GITHUB_ENV"]).open("a").write(f"COLLECTION={ident}\n")
+          print(ident)
+          PY
+          )
+            osheaf collection sync "$id" --from "collections/$id.yaml" --message "The collection is set up"
+            osheaf index
+          fi
+          osheaf verify
+          echo "BASE_URL=$BASE_URL" >> "$GITHUB_ENV"
+          echo "ARCHIVE_ID=$ARCHIVE_ID" >> "$GITHUB_ENV"
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Set up the archive: $NAME"
+          git push
+      - name: Labels of the issue forms
+        run: |
+          for l in "osheaf: deposit" "osheaf: notice" "osheaf: withdraw" "osheaf: licence" "osheaf: collection" "osheaf: add" "osheaf: vet" "osheaf: remove"; do
+            gh label create "$l" -R "$GITHUB_REPOSITORY" --color 5e6a78 --force >/dev/null || true
+          done
+      - name: GitHub Pages
+        run: |
+          # the push above starts a build if Pages is on; turning it on usually
+          # needs the owner (Settings), which the workflow's token is not
+          if gh api "repos/$GITHUB_REPOSITORY/pages" >/dev/null 2>&1 \
+             || gh api -X POST "repos/$GITHUB_REPOSITORY/pages" -f "source[branch]=main" -f "source[path]=/" >/dev/null 2>&1; then
+            pages="GitHub Pages is on: the site will be at $BASE_URL within a few minutes."
+          else
+            pages="Turn GitHub Pages on: Settings, Pages, Deploy from a branch, branch main, folder / (root). The site will then be at $BASE_URL."
+          fi
+          {
+            echo "## The archive is set up"
+            echo
+            echo "- Identifier: \`$ARCHIVE_ID\` (it names the archive forever)."
+            echo "- $pages"
+            if [ -n "$COLLECTION" ]; then
+              echo "- The collection $COLLECTION is created and featured on the home page: add papers with Issues, New issue, **Add a member** (In collection: $COLLECTION)."
+            fi
+            echo "- To deposit a paper: Issues, New issue, **New deposit**."
+          } >> "$GITHUB_STEP_SUMMARY"

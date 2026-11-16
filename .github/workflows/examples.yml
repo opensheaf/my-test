@@ -1,0 +1,29 @@
+# The testing ground: build throwaway archives from the example papers and
+# run every workflow of the tools, on every push and weekly: an author's
+# archive (examples/run.sh), collections (examples/collections.sh) and
+# journals (examples/journals.sh).
+name: examples
+on:
+  push:
+  pull_request:
+  schedule: [{cron: "0 6 * * 1"}]
+  workflow_dispatch:
+jobs:
+  examples:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with: {repository: opensheaf/example-papers, path: example-papers}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.13"}
+      - run: pip install "opensheaf[validate] @ git+https://github.com/opensheaf/opensheaf-py"
+      - run: examples/run.sh example-papers "$RUNNER_TEMP/archive"
+      - uses: actions/upload-artifact@v4
+        with: {name: example-archive, path: "${{ runner.temp }}/archive"}
+      - run: examples/collections.sh example-papers "$RUNNER_TEMP/collections"
+      - run: examples/journals.sh example-papers "$RUNNER_TEMP/journals"
+      - uses: actions/upload-artifact@v4
+        with: {name: example-collections, path: "${{ runner.temp }}/collections"}
+      - uses: actions/upload-artifact@v4
+        with: {name: example-journals, path: "${{ runner.temp }}/journals"}
