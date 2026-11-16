@@ -1,0 +1,18 @@
+{
+  "format": "opensheaf-object/0.1",
+  "specification": "0.1",
+  "kind": "document",
+  "archiveId": "tag:opensheaf.github.io,2026:my-test",
+  "objectId": "lost-sources",
+  "documentVersion": 1,
+  "sourcesMissing": {
+    "text": "the sources of this paper were lost"
+  },
+  "renditions": [
+    {
+      "path": "paper.pdf",
+      "mediaType": "application/pdf"
+    }
+  ],
+  "status": "active"
+}

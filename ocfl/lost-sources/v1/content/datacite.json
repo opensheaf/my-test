@@ -1,0 +1,54 @@
+{
+  "titles": [
+    {
+      "title": "An old conference paper"
+    }
+  ],
+  "creators": [
+    {
+      "name": "Example, Ada",
+      "nameType": "Personal",
+      "familyName": "Example",
+      "givenName": "Ada",
+      "affiliation": [
+        {
+          "name": "University of Nowhere"
+        }
+      ]
+    }
+  ],
+  "publisher": {
+    "name": "A test archive"
+  },
+  "publicationYear": 1998,
+  "types": {
+    "resourceTypeGeneral": "Preprint"
+  },
+  "version": "1",
+  "url": "https://opensheaf.github.io/my-test/paper/lost-sources/",
+  "dates": [
+    {
+      "date": "1998-06-15",
+      "dateType": "Issued"
+    },
+    {
+      "date": "1998-06-15",
+      "dateType": "Available"
+    }
+  ],
+  "language": "en",
+  "formats": [
+    "application/pdf"
+  ],
+  "rightsList": [
+    {
+      "rights": "All rights reserved"
+    }
+  ],
+  "descriptions": [
+    {
+      "description": "An invented paper of 1998 whose sources were lost; only its PDF remains.",
+      "descriptionType": "Abstract"
+    }
+  ]
+}

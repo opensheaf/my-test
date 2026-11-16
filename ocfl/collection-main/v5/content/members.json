@@ -1,0 +1,59 @@
+{
+  "format": "opensheaf-collection/0.1",
+  "type": "catalogue",
+  "order": "issued-desc",
+  "members": [
+    {
+      "kind": "document",
+      "archive": "tag:opensheaf.github.io,2026:my-test",
+      "archiveUrl": "https://opensheaf.github.io/my-test/",
+      "id": "random-walks",
+      "version": "v2",
+      "inventorySha512": "9538f97bad29c99eba96d10ea5e290b14c10a2e6611fa200ce5eac38877e9a2a6c9cb3c5deb7988736b076fd3afa30a3a7421015cf40d4e794403855346bad1b",
+      "follow": "latest",
+      "cite": {
+        "title": "Random walks on a fictitious lattice",
+        "creators": [
+          "Ada Example",
+          "Bo Sample"
+        ],
+        "year": 2024,
+        "issued": "2024-03-01"
+      }
+    },
+    {
+      "kind": "document",
+      "archive": "tag:opensheaf.github.io,2026:my-test",
+      "archiveUrl": "https://opensheaf.github.io/my-test/",
+      "id": "heat-notes",
+      "version": "v1",
+      "inventorySha512": "86ffd9b1ff6ae482a11808d661b10386394ea2fa3d719f0eb67740f3171859effb968d6132532a8a8691c51e5b0e4b2b7bb99f13b5d92a676259c506987f09bc",
+      "follow": "latest",
+      "cite": {
+        "title": "Notes on the heat equation",
+        "creators": [
+          "Cy Placeholder"
+        ],
+        "year": 2023,
+        "issued": "2023-12-01"
+      }
+    },
+    {
+      "kind": "document",
+      "archive": "tag:opensheaf.github.io,2026:my-test",
+      "archiveUrl": "https://opensheaf.github.io/my-test/",
+      "id": "lost-sources",
+      "version": "v1",
+      "inventorySha512": "d6d677e4a7599a066fa607a90b5bcb6deaf866ad6e0f512918b92cd1007701a246707a779ebe102bd5456daeb661efa13bffc8d543605d270d38e378edba2752",
+      "follow": "latest",
+      "cite": {
+        "title": "An old conference paper",
+        "creators": [
+          "Ada Example"
+        ],
+        "year": 1998,
+        "issued": "1998-06-15"
+      }
+    }
+  ]
+}

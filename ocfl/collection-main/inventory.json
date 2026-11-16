@@ -2,7 +2,7 @@
   "id": "collection-main",
   "type": "https://ocfl.io/1.1/spec/#inventory",
   "digestAlgorithm": "sha512",
-  "head": "v4",
+  "head": "v5",
   "contentDirectory": "content",
   "manifest": {
     "00ce9d559e09db7555aced25d894da1ffb3e934ba8e8ceae0a87a17ef384754f4c59962ce81e08cc724d240a4430b77666a3dc765a474d8d6c50b7a23f2ddf1f": [
@@ -40,6 +40,15 @@
     ],
     "e7ece4bd46aba71673a6e98ad1c68eb54dd48e88887453a7e265267e1b1afefe14f40917516f7c2077a5ec6f2a19a2a34762a1978d7ff2528d436d860a2723e5": [
       "v4/content/object.json"
+    ],
+    "fa0ba871380182da637b201fa2a04e18d73399f5f8eefeca78399d9ccef0e86db6a893406d00fbb854e793886f5403c652ecec3ead17fcadbb549fe576445b9c": [
+      "v5/content/datacite.json"
+    ],
+    "7270eb4d6f3b618bf85b9c672d52ac2e2384db51d23ec60fff37303a97aa526273fda819090fd7eb68aa7bc55d8d1f4cad1cec84838244a9259a60497b6f7553": [
+      "v5/content/members.json"
+    ],
+    "6abebc9038325727f6187c9773f208ebbd86fe53a6bb7c362e597aafbd837493fba418de7ccfe48258d140bd731d369b5ad8bbe0a8ef6ad28ddea84bb777b40f": [
+      "v5/content/object.json"
     ]
   },
   "versions": {
@@ -118,6 +127,25 @@
           "object.json"
         ]
       }
+    },
+    "v5": {
+      "created": "2026-11-16T00:10:28Z",
+      "message": "Collection version 5: 3 documents",
+      "user": {
+        "name": "Massimiliano Gubinelli",
+        "address": "https://opensheaf.github.io/my-test/"
+      },
+      "state": {
+        "fa0ba871380182da637b201fa2a04e18d73399f5f8eefeca78399d9ccef0e86db6a893406d00fbb854e793886f5403c652ecec3ead17fcadbb549fe576445b9c": [
+          "datacite.json"
+        ],
+        "7270eb4d6f3b618bf85b9c672d52ac2e2384db51d23ec60fff37303a97aa526273fda819090fd7eb68aa7bc55d8d1f4cad1cec84838244a9259a60497b6f7553": [
+          "members.json"
+        ],
+        "6abebc9038325727f6187c9773f208ebbd86fe53a6bb7c362e597aafbd837493fba418de7ccfe48258d140bd731d369b5ad8bbe0a8ef6ad28ddea84bb777b40f": [
+          "object.json"
+        ]
+      }
     }
   },
   "fixity": {
@@ -157,6 +185,15 @@
       ],
       "5d07831a3c6b5194839b0501e9af525b": [
         "v4/content/object.json"
+      ],
+      "caba8393f16eafd61ea1c2cc0c145bbb": [
+        "v5/content/datacite.json"
+      ],
+      "b9739e27fbd19f4a49d47b99df7b26e6": [
+        "v5/content/members.json"
+      ],
+      "bbc720aeb4f8a3ebbcfaa6a2377ff217": [
+        "v5/content/object.json"
       ]
     },
     "sha256": {
@@ -195,6 +232,15 @@
       ],
       "d04e11238a9a493c1dea7357f74c59f10ff013fd7425bb894704c9dcc93de6c3": [
         "v4/content/object.json"
+      ],
+      "e25fc57afbda12c51b7022ca3724d130761a23d038812e1caf3e294ed0ba6314": [
+        "v5/content/datacite.json"
+      ],
+      "59f2e5cc63b0048c55e1eb479c364ba31208eb4b015e5f71f4ddaffdf777c05d": [
+        "v5/content/members.json"
+      ],
+      "20fb0b84d39c14362def15efe9e981aa267179625efef5007a6c627b88d2e2ad": [
+        "v5/content/object.json"
       ]
     }
   }

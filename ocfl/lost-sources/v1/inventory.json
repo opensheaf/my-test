@@ -1,0 +1,63 @@
+{
+  "id": "lost-sources",
+  "type": "https://ocfl.io/1.1/spec/#inventory",
+  "digestAlgorithm": "sha512",
+  "head": "v1",
+  "contentDirectory": "content",
+  "manifest": {
+    "a58b2ec509bbaef0a071386de64557da8e7a6ad74e2874dcbe32d48313076737ddeee02fdc313db472caef22ba2e9d4e1bc53e369b23d4a7509b34ccae0ceb94": [
+      "v1/content/datacite.json"
+    ],
+    "92d2eda563548cdba1c6156ef23ada30a46120ecee5cebff0764c944e1aa118a8be916f0f89fe3885c9f294cbae296a5e732b26a8c3044f71320555b3c38e24e": [
+      "v1/content/object.json"
+    ],
+    "b0d26af37823b8c396be859cec6015deac0f73f82432cc7839cca97f5c2e2015d2c226cb287b1e825f589cd8105ccdb84d7e4b842871c4f4ec8d623799f6f3bb": [
+      "v1/content/paper.pdf"
+    ]
+  },
+  "versions": {
+    "v1": {
+      "created": "2026-11-16T00:10:28Z",
+      "message": "Deposit from request 20261116-000957-zekm",
+      "user": {
+        "name": "Massimiliano Gubinelli",
+        "address": "https://opensheaf.github.io/my-test/"
+      },
+      "state": {
+        "a58b2ec509bbaef0a071386de64557da8e7a6ad74e2874dcbe32d48313076737ddeee02fdc313db472caef22ba2e9d4e1bc53e369b23d4a7509b34ccae0ceb94": [
+          "datacite.json"
+        ],
+        "92d2eda563548cdba1c6156ef23ada30a46120ecee5cebff0764c944e1aa118a8be916f0f89fe3885c9f294cbae296a5e732b26a8c3044f71320555b3c38e24e": [
+          "object.json"
+        ],
+        "b0d26af37823b8c396be859cec6015deac0f73f82432cc7839cca97f5c2e2015d2c226cb287b1e825f589cd8105ccdb84d7e4b842871c4f4ec8d623799f6f3bb": [
+          "paper.pdf"
+        ]
+      }
+    }
+  },
+  "fixity": {
+    "md5": {
+      "b72de5ae07786394e9d26cc6a98a970c": [
+        "v1/content/datacite.json"
+      ],
+      "25cbf516dbee3d843e173b2f7f1facd1": [
+        "v1/content/object.json"
+      ],
+      "0d7671345f3d1d23bd9c78b6bcb0715f": [
+        "v1/content/paper.pdf"
+      ]
+    },
+    "sha256": {
+      "91c46f2cc84f7f25c8b494f594f5fe073874412be21f1e524a8caed3eb9d1305": [
+        "v1/content/datacite.json"
+      ],
+      "440d8fcc8904a23b28c3f9fa355cf60933cea1cbad7a808292ecfb50c2ea5820": [
+        "v1/content/object.json"
+      ],
+      "3580cdda008c5f2f097046fe97d0e4c75386d20fb49a76f48b26238369b449b7": [
+        "v1/content/paper.pdf"
+      ]
+    }
+  }
+}
