@@ -1,0 +1,11 @@
+{
+  "operation": "new_collection",
+  "fields": {
+    "Identifier of the new collection": "reading-list",
+    "Title of the collection": "A reading list on stochastic quantisation",
+    "Kind": "selection",
+    "Description": "Papers on the stochastic quantisation of Euclidean field theories, to read first, from the archives they are kept in.",
+    "Feature it on the home page": "Yes"
+  },
+  "files": {}
+}
