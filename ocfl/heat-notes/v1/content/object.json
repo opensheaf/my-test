@@ -1,0 +1,17 @@
+{
+  "format": "opensheaf-object/0.1",
+  "specification": "0.1",
+  "kind": "document",
+  "archiveId": "tag:opensheaf.github.io,2026:my-test",
+  "objectId": "heat-notes",
+  "documentVersion": 1,
+  "mainSource": "notes.md",
+  "sourceFormat": "text/markdown",
+  "renditions": [
+    {
+      "path": "paper.pdf",
+      "mediaType": "application/pdf"
+    }
+  ],
+  "status": "active"
+}
