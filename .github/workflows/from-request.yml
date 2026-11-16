@@ -6,7 +6,9 @@
 # Each request is carried out by .github/scripts/osheaf_issue.py, as an
 # issue form would be; the result is written to requests/results/ID.json
 # for the page to read, and the request is removed. Nothing is committed
-# from a request that fails.
+# from a request that fails. Only the last 100 answers are kept (they are
+# for the page, and stay in the history); the archive itself records what
+# each request changed.
 name: from request
 on:
   push:
@@ -61,6 +63,9 @@ jobs:
               "message": read("result.md"), "title": read("title.txt"),
               "date": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
           }, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+          # the last 100 answers, by name, which begins with the date and time
+          for old in sorted(Path("requests/results").glob("*.json"))[:-100]:
+              old.unlink()
           PY
             git rm -r -q "$dir"
             git add -A
