@@ -1,0 +1,29 @@
+{
+  "format": "opensheaf-object/0.1",
+  "specification": "0.1",
+  "kind": "document",
+  "archiveId": "tag:opensheaf.github.io,2026:my-test",
+  "objectId": "random-walks",
+  "documentVersion": 2,
+  "mainSource": "paper.tex",
+  "sourceFormat": "application/x-tex",
+  "renditions": [
+    {
+      "path": "paper.pdf",
+      "mediaType": "application/pdf"
+    }
+  ],
+  "status": "active",
+  "changes": {
+    "text": "Added a remark on Stirling's formula, as asked by the referee."
+  },
+  "notices": [
+    {
+      "text": "Lemma 2 of version 1 is wrong as stated: the constant depends on the dimension. Corrected in version 2.",
+      "path": "notices/random-walks-erratum.md",
+      "mediaType": "text/markdown",
+      "documentVersion": 1,
+      "date": "2026-11-16"
+    }
+  ]
+}

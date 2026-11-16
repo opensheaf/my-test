@@ -1,0 +1,221 @@
+{
+  "id": "random-walks",
+  "type": "https://ocfl.io/1.1/spec/#inventory",
+  "digestAlgorithm": "sha512",
+  "head": "v3",
+  "contentDirectory": "content",
+  "manifest": {
+    "9f99c912d125c3341aca819a7e7c37920bb7e7f6bf1b1375de3bbaff17817cfd6006ef3ea7214abb554e401f39c493b258bf9134c5b8bdc5234abb0ec67636d8": [
+      "v1/content/datacite.json"
+    ],
+    "dbc03c45a14ad9b4d95050f31009952179f15936b5d448afd2f14a1381766e70f61fd5d5a1866b3e243b8dd9df27d9ae846271d12ef1f9835ecd54dda8389546": [
+      "v1/content/figures/walk.pdf"
+    ],
+    "298016afd96aaa4e58d3d3d34c26d5754ec491fee1371e9e279c464d38549e64416a1af5d8327fca8ff3e2c6a650b33b2fb384160d62f29b059f8b7ed24460f1": [
+      "v1/content/object.json"
+    ],
+    "188a6f5ff04dd30445f36c160022fadd8c0fd69cb6fe40cb9986b4c72e010ea16ab2055a0969d1be6fda269f7d33b349e66d1bf70e1a3b79ff1a89c09e7ffd4d": [
+      "v1/content/paper.pdf"
+    ],
+    "1dbed486f4f8009b30e4a9613fdf72a76ed255fbdaff122e2e634deb2614f5381a25efbe2895d2fa42ac4956d88f0e7f0433056e74f766b7d2270c8d0a92fef5": [
+      "v1/content/paper.tex"
+    ],
+    "1120ec80bf49daff8f349980155c54a9a725ae6f6eae44b40447d55511e11e6441c4ef17a062fa11ac7cec82af80f4739362d32aeacfe538e9a695f52c297f28": [
+      "v1/content/refs.bib"
+    ],
+    "f9e9a24720eb42581a888233c8d2c8b45193f1b45653754c0a1cb920877a44a78ca3c5ec307ac5a6841c177fd117092d6e28b155a2fac94749576a685f87c353": [
+      "v2/content/datacite.json"
+    ],
+    "63717bb63498932701280cbf0c8391b243ce6ccbd511622b01ca215675ed3b5425000c605836c2a354dcccaa3ea8e37051448ae0879a2d9215fa1630a8dca37e": [
+      "v2/content/object.json"
+    ],
+    "80ab68926ba9ff673c0feba5714a09aa511a321b44214486cf54fc5ceb05ed17840e8c2287e249a3678a52d84b14b427deae54a12e58a95e2a20cfa867ff01b4": [
+      "v2/content/paper.pdf"
+    ],
+    "91cc0e4391950f335b927ce612e61e12c7e8cbd9fd70e6681d8a1f0c5b54db9e023644b4a66a0b03f3c7f0f6a7971efc2b98a9a8bd443b2c8bfcebfa4b13c251": [
+      "v2/content/paper.tex"
+    ],
+    "7959c876f27497f9075e29e420734481565fbb586f31ee9ec26eec8de228a8478637aa8c0f90011f10b9dfb2ef37aee2ea78873e5c64b8348a474ef92a8fb160": [
+      "v3/content/datacite.json"
+    ],
+    "4248ff8d6bda5ab59cbd2fbf2b0afe4a990013d57ee171e1a2d09e7ab1b609e74c7dfb963ec4207eb2c81bc04715e4ac496b44ef02d9c4b3427ecd1b173f7e10": [
+      "v3/content/notices/random-walks-erratum.md"
+    ],
+    "cc31b5cd8655c53c19be8aee579195b3af233dd988afe51e6e70acfb6387acf44e5cafc1168a3897ddec3f3bed89644308e2cc553572708b5884f88ab589c972": [
+      "v3/content/object.json"
+    ]
+  },
+  "versions": {
+    "v1": {
+      "created": "2026-11-16T00:08:35Z",
+      "message": "Deposit from request 20261116-000811-jnfr",
+      "user": {
+        "name": "Massimiliano Gubinelli",
+        "address": "https://opensheaf.github.io/my-test/"
+      },
+      "state": {
+        "9f99c912d125c3341aca819a7e7c37920bb7e7f6bf1b1375de3bbaff17817cfd6006ef3ea7214abb554e401f39c493b258bf9134c5b8bdc5234abb0ec67636d8": [
+          "datacite.json"
+        ],
+        "dbc03c45a14ad9b4d95050f31009952179f15936b5d448afd2f14a1381766e70f61fd5d5a1866b3e243b8dd9df27d9ae846271d12ef1f9835ecd54dda8389546": [
+          "figures/walk.pdf"
+        ],
+        "298016afd96aaa4e58d3d3d34c26d5754ec491fee1371e9e279c464d38549e64416a1af5d8327fca8ff3e2c6a650b33b2fb384160d62f29b059f8b7ed24460f1": [
+          "object.json"
+        ],
+        "188a6f5ff04dd30445f36c160022fadd8c0fd69cb6fe40cb9986b4c72e010ea16ab2055a0969d1be6fda269f7d33b349e66d1bf70e1a3b79ff1a89c09e7ffd4d": [
+          "paper.pdf"
+        ],
+        "1dbed486f4f8009b30e4a9613fdf72a76ed255fbdaff122e2e634deb2614f5381a25efbe2895d2fa42ac4956d88f0e7f0433056e74f766b7d2270c8d0a92fef5": [
+          "paper.tex"
+        ],
+        "1120ec80bf49daff8f349980155c54a9a725ae6f6eae44b40447d55511e11e6441c4ef17a062fa11ac7cec82af80f4739362d32aeacfe538e9a695f52c297f28": [
+          "refs.bib"
+        ]
+      }
+    },
+    "v2": {
+      "created": "2026-11-16T00:09:07Z",
+      "message": "Deposit from request 20261116-000840-ygaz",
+      "user": {
+        "name": "Massimiliano Gubinelli",
+        "address": "https://opensheaf.github.io/my-test/"
+      },
+      "state": {
+        "f9e9a24720eb42581a888233c8d2c8b45193f1b45653754c0a1cb920877a44a78ca3c5ec307ac5a6841c177fd117092d6e28b155a2fac94749576a685f87c353": [
+          "datacite.json"
+        ],
+        "dbc03c45a14ad9b4d95050f31009952179f15936b5d448afd2f14a1381766e70f61fd5d5a1866b3e243b8dd9df27d9ae846271d12ef1f9835ecd54dda8389546": [
+          "figures/walk.pdf"
+        ],
+        "63717bb63498932701280cbf0c8391b243ce6ccbd511622b01ca215675ed3b5425000c605836c2a354dcccaa3ea8e37051448ae0879a2d9215fa1630a8dca37e": [
+          "object.json"
+        ],
+        "80ab68926ba9ff673c0feba5714a09aa511a321b44214486cf54fc5ceb05ed17840e8c2287e249a3678a52d84b14b427deae54a12e58a95e2a20cfa867ff01b4": [
+          "paper.pdf"
+        ],
+        "91cc0e4391950f335b927ce612e61e12c7e8cbd9fd70e6681d8a1f0c5b54db9e023644b4a66a0b03f3c7f0f6a7971efc2b98a9a8bd443b2c8bfcebfa4b13c251": [
+          "paper.tex"
+        ],
+        "1120ec80bf49daff8f349980155c54a9a725ae6f6eae44b40447d55511e11e6441c4ef17a062fa11ac7cec82af80f4739362d32aeacfe538e9a695f52c297f28": [
+          "refs.bib"
+        ]
+      }
+    },
+    "v3": {
+      "created": "2026-11-16T00:11:03Z",
+      "message": "Notice from request 20261116-001031-fkjm",
+      "user": {
+        "name": "Massimiliano Gubinelli",
+        "address": "https://opensheaf.github.io/my-test/"
+      },
+      "state": {
+        "7959c876f27497f9075e29e420734481565fbb586f31ee9ec26eec8de228a8478637aa8c0f90011f10b9dfb2ef37aee2ea78873e5c64b8348a474ef92a8fb160": [
+          "datacite.json"
+        ],
+        "dbc03c45a14ad9b4d95050f31009952179f15936b5d448afd2f14a1381766e70f61fd5d5a1866b3e243b8dd9df27d9ae846271d12ef1f9835ecd54dda8389546": [
+          "figures/walk.pdf"
+        ],
+        "4248ff8d6bda5ab59cbd2fbf2b0afe4a990013d57ee171e1a2d09e7ab1b609e74c7dfb963ec4207eb2c81bc04715e4ac496b44ef02d9c4b3427ecd1b173f7e10": [
+          "notices/random-walks-erratum.md"
+        ],
+        "cc31b5cd8655c53c19be8aee579195b3af233dd988afe51e6e70acfb6387acf44e5cafc1168a3897ddec3f3bed89644308e2cc553572708b5884f88ab589c972": [
+          "object.json"
+        ],
+        "80ab68926ba9ff673c0feba5714a09aa511a321b44214486cf54fc5ceb05ed17840e8c2287e249a3678a52d84b14b427deae54a12e58a95e2a20cfa867ff01b4": [
+          "paper.pdf"
+        ],
+        "91cc0e4391950f335b927ce612e61e12c7e8cbd9fd70e6681d8a1f0c5b54db9e023644b4a66a0b03f3c7f0f6a7971efc2b98a9a8bd443b2c8bfcebfa4b13c251": [
+          "paper.tex"
+        ],
+        "1120ec80bf49daff8f349980155c54a9a725ae6f6eae44b40447d55511e11e6441c4ef17a062fa11ac7cec82af80f4739362d32aeacfe538e9a695f52c297f28": [
+          "refs.bib"
+        ]
+      }
+    }
+  },
+  "fixity": {
+    "md5": {
+      "d4c6ba7c0ec06d28c0a93d8be6dc932a": [
+        "v1/content/datacite.json"
+      ],
+      "ab8a8244ecd2134a8e8960a1003fa4b6": [
+        "v1/content/figures/walk.pdf"
+      ],
+      "a959ac2560e699d3c2911c51fe71a315": [
+        "v1/content/object.json"
+      ],
+      "6f22febe1f30dab5d1592bd8e8139443": [
+        "v1/content/paper.pdf"
+      ],
+      "d29871ffbc2f6daf0acb781d5aafb9c1": [
+        "v1/content/paper.tex"
+      ],
+      "33eecba9df559abdf0666593947b499e": [
+        "v1/content/refs.bib"
+      ],
+      "b0a4caefb379fe8fce89037a89401e4b": [
+        "v2/content/datacite.json"
+      ],
+      "3aba70ddfaec1041c6bd15a6cb812cc7": [
+        "v2/content/object.json"
+      ],
+      "8576a022177828441752eb01d14ea33c": [
+        "v2/content/paper.pdf"
+      ],
+      "36c80849f4b48c6f768555908162c9ce": [
+        "v2/content/paper.tex"
+      ],
+      "1c2cd192014cce6dcfd807d2bdb990d4": [
+        "v3/content/datacite.json"
+      ],
+      "5ab2a2d993110688d30daaeb707eaff4": [
+        "v3/content/notices/random-walks-erratum.md"
+      ],
+      "f3848470041766e04cc4aeacb21f752a": [
+        "v3/content/object.json"
+      ]
+    },
+    "sha256": {
+      "01412db5db89750bf3e6a653273f75394e26e6e39a160ed810ff1d15805a83a5": [
+        "v1/content/datacite.json"
+      ],
+      "dfb5f9a74f3b05575bbe9282e64e169a596edecb54a0e95903c6f1e5061394eb": [
+        "v1/content/figures/walk.pdf"
+      ],
+      "8e59ba5396f9812620c4d0d975f8e9bc485278ea1867f98de9e449e4419e5c63": [
+        "v1/content/object.json"
+      ],
+      "f63d7562899e17e8dd530df7ee3fafe1954b700f367afc1daa15b9d5ede7f33f": [
+        "v1/content/paper.pdf"
+      ],
+      "d32ccfe4643f11ba7f84a6c0054e9b74348db89f09dafe2e633d498e4093ff07": [
+        "v1/content/paper.tex"
+      ],
+      "e74c62e7277612cf84fe6478f93e9a84a40aa12c6d728bb7e88a47aae08b4f53": [
+        "v1/content/refs.bib"
+      ],
+      "41923b199737bdcf02e6376fa49306746e8cb4da83749c761f3f936421939b61": [
+        "v2/content/datacite.json"
+      ],
+      "56d2e02a5e64671371d79980252dd3b7f89200b50fad17e85ff935be197741e7": [
+        "v2/content/object.json"
+      ],
+      "1eeda07fda83fe82334ca1488967246ac8abaf03aaa5694a56f94935f08b7481": [
+        "v2/content/paper.pdf"
+      ],
+      "832bd26c0e86da5d6b11b7e4c6d1e389cbefbcfb0e8731e91ae7d487fb17b3a7": [
+        "v2/content/paper.tex"
+      ],
+      "4e434170f9e17b0c6d007f93b0b372d36a0605eab91f8014ef73d297eae777ef": [
+        "v3/content/datacite.json"
+      ],
+      "c906a933dfbe0415367279562080a470b1228bcb6a50e9eda555e0ef7e00fd34": [
+        "v3/content/notices/random-walks-erratum.md"
+      ],
+      "829a9060eee88c93285f0ceff946bd5848142f5a921405e0fbab6409eb6c1b82": [
+        "v3/content/object.json"
+      ]
+    }
+  }
+}
