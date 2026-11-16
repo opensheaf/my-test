@@ -8,4 +8,6 @@ title: Seminar, autumn 2026
 description: The papers discussed in the seminar.
 type: catalogue
 order: manual
-members: []
+members:
+- archive: https://opensheaf.github.io/my-test/
+  id: heat-notes

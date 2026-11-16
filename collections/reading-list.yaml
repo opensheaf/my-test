@@ -22,3 +22,6 @@ members:
   id: random-walks
 - archive: https://opensheaf.github.io/my-test/
   id: seminar-autumn-2026
+  revisions:
+  - 1
+  - 2
