@@ -24,7 +24,8 @@ jobs:
       contains(github.event.issue.body, '### Identifier of the new collection') ||
       contains(github.event.issue.body, '### Archive of the new member') ||
       contains(github.event.issue.body, '### Versions to vet') ||
-      contains(github.event.issue.body, '### Member to remove')
+      contains(github.event.issue.body, '### Member to remove') ||
+      contains(github.event.issue.body, '### arXiv identifier')
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ github.token }}

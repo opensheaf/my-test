@@ -37,6 +37,13 @@ OSHEAF = shlex.split(os.environ.get("OSHEAF", "osheaf"))
 NO_RESPONSE = "_No response_"
 LINK = re.compile(r"!?\[([^\]]*)\]\((https?://[^)\s]+)\)")
 IDENT = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
+# arXiv identifiers, new (2303.18112) and old (math/0601001, math.PR/0601001),
+# with an optional version
+ARXIV = re.compile(r"^(?:arxiv:|https?://(?:www\.)?arxiv\.org/(?:abs|pdf)/)?"
+                   r"(\d{4}\.\d{4,5}|[a-z-]+(?:\.[A-Z]{2})?/\d{7})(v\d+)?(?:\.pdf)?/?$", re.I)
+AUTHOR = "I am an author of the paper"
+PERMISSION = "The authors gave me permission"
+
 COLLECTIONS = Path("collections")
 SOURCE_SUFFIXES = {".tex", ".ltx", ".tm", ".md", ".typ", ".lyx", ".rst", ".org", ".txt"}
 LICENCES = {"cc-by-4.0", "cc-by-sa-4.0", "cc0-1.0", "gpl-3.0-only", "gpl-3.0-or-later"}
@@ -59,6 +66,7 @@ FORMS = {
     "Archive of the new member": "add",
     "Versions to vet": "vet",
     "Member to remove": "remove",
+    "arXiv identifier": "arxiv",
 }
 
 
@@ -434,6 +442,13 @@ def deposit(form, origin):
         args = ["deposit", ident] + ([main] if main is not None else []) + ["--pdf", pdfs[0]]
         if main is None:
             args += ["--no-source", missing]
+        if licence_file := field(form, "Licence file"):
+            if main is None:
+                raise Problem("A **Licence file** must be one of the sources; there are none.")
+            if licence_file not in [main.name] + [logical for _, logical in others]:
+                raise Problem(f"The licence file `{licence_file}` is not among the sources: give its path "
+                              "inside the zip (for instance `LICENSE`).")
+            args += ["--licence-file", licence_file]
         for path, logical in others:
             args += ["--extra-source", f"{path}={logical}"]
         title, authors = field(form, "Title"), lines(field(form, "Authors"))
@@ -471,6 +486,14 @@ def deposit(form, origin):
             args += ["--issued", issued]
         args += ["--message", f"Deposit from {origin}"]
         osheaf(*args)
+    where = place(form, cid, ident)
+    return (cid, f"Deposit {ident}{where} ({origin})", f"Deposit: {ident}",
+            f"`{ident}` was deposited{where}")
+
+
+def place(form, cid, ident):
+    """Adds a document of this archive to the collection cid (if any), or,
+    in a selection where it is already, vets its current version."""
     where = ""
     if cid:
         data = load(cid)
@@ -486,8 +509,67 @@ def deposit(form, origin):
                                              + [dv]))
         save(cid, data)
         where = f" in the collection `{cid}`"
-    return (cid, f"Deposit {ident}{where} ({origin})", f"Deposit: {ident}",
-            f"`{ident}` was deposited{where}")
+    return where
+
+
+def arxiv(form, origin):
+    """A paper from arXiv, with all its versions or some of them, byte for
+    byte (osheaf arxiv fetch, then import). Only with the right to
+    redistribute it: the author deposits it, or the authors gave permission;
+    recorded as the agreement of each version."""
+    m = ARXIV.match(field(form, "arXiv identifier", required=True).strip())
+    if not m:
+        raise Problem("**arXiv identifier** should look like `2303.18112` (or `math/0601001`), "
+                      "possibly with a version (`2303.18112v2`) or as the address of its page.")
+    aid, version = m.group(1), m.group(2)
+    ident = identifier(form, "Identifier")
+    if list_path(ident).exists():
+        raise Problem(f"`{ident}` is a collection of this archive, not a document.")
+    grounds = field(form, "Right to deposit it", required=True)
+    who = lines(field(form, "Who agreed"))
+    if grounds == AUTHOR:
+        if len(who) != 1:
+            raise Problem("Give your name in **Who agreed** (Family, Given): you deposit it as an author.")
+        method = "deposited by an author, from arXiv"
+    elif grounds == PERMISSION:
+        how = field(form, "How the permission was given")
+        if not who or not how:
+            raise Problem("Give **Who agreed** (the authors who gave permission, one per line) and "
+                          "**How the permission was given** (for instance \"by e-mail, 3 May 2026\").")
+        method = f"permission of the authors to deposit it from arXiv: {how}"
+    else:
+        raise Problem("Choose in **Right to deposit it** why you may deposit this paper: arXiv's "
+                      "licence lets arXiv distribute a paper, not others. Only its authors, or "
+                      "someone with their permission, can deposit it here.")
+    wanted = field(form, "Versions")
+    if wanted.lower() in ("", "all", "all versions"):
+        wanted = version or ""
+    only = [v if v.startswith("v") else f"v{v}" for v in re.split(r"[,\s]+", wanted.lower()) if v]
+    if any(not re.fullmatch(r"v\d+", v) for v in only):
+        raise Problem("**Versions** should be empty (all), or arXiv's versions: `v1, v3`.")
+    cid = collection(form, required=False)
+    exists = (Path("ocfl") / ident / "inventory.json").exists()
+    with tempfile.TemporaryDirectory() as tmp:
+        dl = Path(tmp) / "downloads"
+        osheaf("arxiv", "fetch", dl, aid)
+        ids = Path(tmp) / "identifiers.json"
+        ids.write_text(json.dumps({aid: ident}), encoding="utf-8")
+        args = ["arxiv", "import", dl, aid, "--identifiers", ids, "--agreement", method]
+        for name in who:
+            args += ["--agreed-by", name.partition("|")[0].strip()]
+        if only:
+            args += ["--versions", ",".join(only)]
+        if exists:
+            args.append("--update")
+        out = osheaf(*args)
+        if exists and "skipped" in out:
+            raise Problem(f"`{ident}` is already in the archive, but not as arXiv:{aid}.")
+    if not (Path("ocfl") / ident / "inventory.json").exists():
+        raise Problem(f"Nothing was imported from arXiv:{aid}:\n\n```\n{out.strip()[-1500:]}\n```")
+    where = place(form, cid, ident)
+    which = f"versions {', '.join(only)}" if only else "all its versions"
+    return (cid, f"Import {ident} from arXiv:{aid}, {which}{where} ({origin})", f"From arXiv: {ident}",
+            f"`{ident}` was imported from arXiv:{aid} ({which}){where}")
 
 
 def notice(form, origin):
@@ -655,7 +737,7 @@ def setup(form, origin):
 
 
 OPERATIONS = {"setup": setup, "deposit": deposit, "notice": notice, "withdraw": withdraw, "relicense": relicense,
-              "new_collection": new_collection, "add": add, "vet": vet, "remove": remove}
+              "new_collection": new_collection, "add": add, "vet": vet, "remove": remove, "arxiv": arxiv}
 
 
 def snapshot():

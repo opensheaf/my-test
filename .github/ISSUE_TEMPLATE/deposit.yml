@@ -63,6 +63,10 @@ body:
       description: The main file, as a path inside the zip (for instance `paper.tex`). Can be left empty if the zip has a single source file at its top.
   - type: input
     attributes:
+      label: Licence file
+      description: Optional. The file among the sources that holds the full text or terms of the licence, as a path inside the zip (for instance `LICENSE`); recorded as the licence of the paper's files.
+  - type: input
+    attributes:
       label: If there are no sources, why
       description: For a paper deposited as a PDF alone, for instance "the sources were lost".
   - type: textarea
