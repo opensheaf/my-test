@@ -1,0 +1,10 @@
+{
+  "operation": "add",
+  "fields": {
+    "In collection": "reading-list",
+    "Archive of the new member": "https://opensheaf.github.io/my-test/",
+    "Identifier of the new member": "random-walks",
+    "Why (optional)": "an example of this archive"
+  },
+  "files": {}
+}
