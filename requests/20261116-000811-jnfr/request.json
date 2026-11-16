@@ -1,0 +1,20 @@
+{
+  "operation": "deposit",
+  "fields": {
+    "Identifier": "random-walks",
+    "Title": "Random walks on a fictitious lattice",
+    "Authors": "Example, Ada|University of Nowhere\nSample, Bo|Institute of Placeholders",
+    "Abstract": "We study the simple random walk $X_n$ on $\\mathbb{Z}^2$ and prove that it returns to the origin infinitely often.\n\nThis paper is an example of an OpenSheaf deposit: its authors and results are invented.",
+    "Keywords": "random walks, recurrence, example",
+    "Licence": "CC BY 4.0 (cc-by-4.0)",
+    "Date this version became public": "2024-03-01"
+  },
+  "files": {
+    "PDF of this version": [
+      "paper.pdf"
+    ],
+    "Sources": [
+      "rw-v1.zip"
+    ]
+  }
+}
